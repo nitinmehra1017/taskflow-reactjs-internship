@@ -8,4 +8,10 @@ module.exports = {
   },
   setupFilesAfterEnv: ['<rootDir>/tests/setup.js'],
   clearMocks: true,
+  restoreMocks: true,
+  collectCoverageFrom: ['src/**/*.{js,jsx}'],
+  coverageReporters: ['text', 'html', 'lcov', 'json', 'json-summary'],
+  coverageThreshold: {
+    global: { statements: 80, branches: 80, functions: 80, lines: 80 },
+  },
 };

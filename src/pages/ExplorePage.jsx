@@ -18,6 +18,7 @@ export default function ExplorePage() {
   const [page, setPage] = useState(1);
   const localLinkRef = useRef(null);
   const resultHeadingRef = useRef(null);
+  const requestStatusRef = useRef(null);
   const [message, setMessage] = useState('');
   const importedIds = useMemo(
     () => new Set(tasks.map((task) => task.sourceId).filter(Boolean)),
@@ -94,7 +95,12 @@ export default function ExplorePage() {
           {storageError}
         </Alert>
       )}
-      <p role="status" className="remote-request-status">
+      <p
+        ref={requestStatusRef}
+        tabIndex={-1}
+        role="status"
+        className="remote-request-status"
+      >
         {loading
           ? data
             ? 'Refreshing remote records. Previous results remain available.'
@@ -118,7 +124,13 @@ export default function ExplorePage() {
         >
           <p>{error.message}</p>
           {data && <p>Showing the last successful results.</p>}
-          <Button variant="outline" onClick={refresh}>
+          <Button
+            variant="outline"
+            onClick={() => {
+              refresh();
+              requestAnimationFrame(() => requestStatusRef.current?.focus());
+            }}
+          >
             Retry request
           </Button>
         </Alert>

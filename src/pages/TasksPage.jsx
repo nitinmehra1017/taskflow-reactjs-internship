@@ -15,13 +15,22 @@ export default function TasksPage() {
   const [message, setMessage] = useState('');
   const createRef = useRef(null);
   const cancelRef = useRef(null);
+  const resultsRef = useRef(null);
+  const editTriggerRef = useRef(null);
   const selected = tasks.find((task) => task.id === dialog?.id);
   const close = () => setDialog(null);
-  const edit = useCallback((id) => setDialog({ mode: 'edit', id }), []);
+  const edit = useCallback((id) => {
+    editTriggerRef.current = document.activeElement;
+    setDialog({ mode: 'edit', id });
+  }, []);
   const requestDelete = useCallback((id) => setDialog({ mode: 'delete', id }), []);
   const toggle = useCallback(
     (id) => {
+      const trigger = document.activeElement;
       toggleTaskStatus(id);
+      requestAnimationFrame(() => {
+        if (!trigger?.isConnected) resultsRef.current?.focus();
+      });
       setMessage('Task status updated.');
     },
     [toggleTaskStatus],
@@ -31,6 +40,10 @@ export default function TasksPage() {
     else addTask(values);
     setMessage(selected ? 'Task updated.' : 'Task created.');
     close();
+    if (selected)
+      requestAnimationFrame(() => {
+        if (!editTriggerRef.current?.isConnected) resultsRef.current?.focus();
+      });
   }
   return (
     <>
@@ -52,7 +65,9 @@ export default function TasksPage() {
       </p>
       <TaskFilters {...filtering} />
       <div className="task-results">
-        <h2>My tasks</h2>
+        <h2 ref={resultsRef} tabIndex={-1}>
+          My tasks
+        </h2>
         <p role="status">
           {filtering.filteredTasks.length} of {tasks.length} tasks
         </p>
