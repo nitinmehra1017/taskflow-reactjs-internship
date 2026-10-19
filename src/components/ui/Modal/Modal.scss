@@ -1,0 +1,84 @@
+@use '../../../styles/tokens' as t;
+.ui-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: #102e35a6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: t.$space-5;
+  overflow-y: auto;
+}
+.ui-modal {
+  @include t.focus-ring;
+  width: 100%;
+  max-width: 520px;
+  max-height: calc(100dvh - 48px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: t.$surface;
+  border-radius: t.$radius-lg;
+  padding: t.$space-5;
+  box-shadow: t.$shadow;
+  color: t.$ink;
+  font-family: t.$font;
+  overflow-wrap: anywhere;
+  &--sm {
+    max-width: 400px;
+  }
+  &--lg {
+    max-width: 720px;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: t.$space-4;
+  }
+  &__header h2 {
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+  &__close {
+    @include t.focus-ring;
+    flex-shrink: 0;
+    min-width: 44px;
+    min-height: 44px;
+    color: t.$muted;
+    background: t.$paper;
+    border: 0;
+    border-radius: t.$radius-sm;
+    font-size: 26px;
+    cursor: pointer;
+  }
+  &__description {
+    color: t.$muted;
+    font-size: t.$text-md;
+    line-height: 1.7;
+    margin: t.$space-3 0;
+  }
+  &__body {
+    margin-top: t.$space-5;
+    line-height: 1.8;
+    font-size: t.$text-md;
+  }
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: t.$space-3;
+    margin-top: t.$space-5;
+    padding-top: t.$space-4;
+    border-top: 1px solid t.$border;
+  }
+}
+@media (max-width: 480px) {
+  .ui-modal-backdrop {
+    padding: t.$space-3;
+  }
+  .ui-modal {
+    max-height: calc(100dvh - 24px);
+    padding: t.$space-4;
+  }
+}

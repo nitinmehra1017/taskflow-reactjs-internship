@@ -1,0 +1,82 @@
+@use '../../../styles/tokens' as t;
+.ui-button {
+  @include t.focus-ring;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: t.$space-2;
+  min-height: 44px;
+  padding: t.$space-3 t.$space-4;
+  border: 1px solid transparent;
+  border-radius: t.$radius-sm;
+  font-family: t.$font;
+  font-size: t.$text-md;
+  font-weight: 600;
+  line-height: 1.4;
+  cursor: pointer;
+  transition: background 120ms ease;
+  overflow-wrap: anywhere;
+  &--primary {
+    background: t.$forest;
+    color: white;
+    &:hover:not(:disabled) {
+      background: #285d4e;
+    }
+  }
+  &--secondary {
+    background: t.$lime;
+    color: t.$forest;
+    &:hover:not(:disabled) {
+      background: #c0dd7b;
+    }
+  }
+  &--outline {
+    background: white;
+    border-color: #7e9689;
+    color: t.$forest;
+    &:hover:not(:disabled) {
+      background: #f0f4e9;
+    }
+  }
+  &--danger {
+    background: t.$danger;
+    color: white;
+    &:hover:not(:disabled) {
+      background: #82232c;
+    }
+  }
+  &--sm {
+    padding: t.$space-2 t.$space-3;
+    font-size: t.$text-sm;
+  }
+  &--lg {
+    min-height: 52px;
+    padding: t.$space-4 t.$space-5;
+    font-size: t.$text-lg;
+  }
+  &:disabled {
+    opacity: 0.58;
+    cursor: not-allowed;
+  }
+  &__spinner {
+    width: 14px;
+    height: 14px;
+    border: 2px solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: ui-spin 700ms linear infinite;
+  }
+}
+@keyframes ui-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ui-button {
+    transition: none;
+  }
+  .ui-button__spinner {
+    animation: none;
+  }
+}

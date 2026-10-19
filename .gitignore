@@ -6,6 +6,7 @@ coverage/
 .DS_Store
 *.log
 !evidence/*.log
+!evidence/**/*.log
 .env
 .env.*
 !.env.example

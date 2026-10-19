@@ -16,7 +16,7 @@ export default function TasksPage() {
         <h2 id="tasks-empty-title">Great things start with a first task.</h2>
         <p>
           The workspace is ready. Task creation, editing, and completion are planned for
-          Week 2. This starter does not store task data yet.
+          Week 3. This starter does not store task data yet.
         </p>
         <Link to="/" className="button button-dark">
           Back to overview
@@ -29,7 +29,7 @@ export default function TasksPage() {
         </h2>
         <div className="planned-grid">
           {[
-            ['02', 'Task essentials', 'Create, edit, complete, and remove tasks.'],
+            ['03', 'Task essentials', 'Create, edit, complete, and remove tasks.'],
             ['03', 'State & storage', 'Keep tasks across visits with local storage.'],
             ['04', 'Search & filters', 'Find your focus by status and priority.'],
           ].map(([week, title, description]) => (

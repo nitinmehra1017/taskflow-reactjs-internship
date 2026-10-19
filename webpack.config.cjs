@@ -26,6 +26,14 @@ module.exports = (_env, argv) => {
             'css-loader',
           ],
         },
+        {
+          test: /\.scss$/i,
+          use: [
+            isProduction ? MiniCssExtractPlugin.loader : 'style-loader',
+            'css-loader',
+            'sass-loader',
+          ],
+        },
         { test: /\.(svg|png|jpe?g|gif|webp|woff2?)$/i, type: 'asset/resource' },
       ],
     },
@@ -48,7 +56,10 @@ module.exports = (_env, argv) => {
       hot: true,
       historyApiFallback: true,
       static: { directory: path.resolve(__dirname, 'public') },
-      client: { overlay: { errors: true, warnings: false } },
+      client: {
+        webSocketURL: 'auto://0.0.0.0:0/ws',
+        overlay: { errors: true, warnings: false },
+      },
     },
   };
 };

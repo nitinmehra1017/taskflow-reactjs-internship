@@ -8,7 +8,12 @@ export default function useRouteFocus() {
   const initialPath = useRef(pathname);
 
   useEffect(() => {
-    const titles = { '/': 'Overview', '/tasks': 'Tasks', '/settings': 'Settings' };
+    const titles = {
+      '/': 'Overview',
+      '/tasks': 'Tasks',
+      '/settings': 'Settings',
+      '/components': 'Components',
+    };
     document.title = `${titles[pathname] || 'Page not found'} · TaskFlow`;
     if (pathname !== initialPath.current) {
       mainRef.current?.focus();

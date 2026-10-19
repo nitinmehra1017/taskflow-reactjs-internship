@@ -4,6 +4,7 @@ import DashboardPage from './pages/DashboardPage';
 import TasksPage from './pages/TasksPage';
 import SettingsPage from './pages/SettingsPage';
 import NotFoundPage from './pages/NotFoundPage';
+import ComponentsPage from './pages/ComponentsPage';
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
         <Route index element={<DashboardPage />} />
         <Route path="tasks" element={<TasksPage />} />
         <Route path="settings" element={<SettingsPage />} />
+        <Route path="components" element={<ComponentsPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>

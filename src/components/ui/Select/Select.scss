@@ -1,0 +1,6 @@
+@use '../../../styles/tokens' as t;
+@include t.field;
+.ui-select {
+  appearance: auto;
+  padding-right: t.$space-6;
+}

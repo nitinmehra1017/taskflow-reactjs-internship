@@ -16,7 +16,7 @@ export default [
   },
   js.configs.recommended,
   {
-    files: ['src/**/*.{js,jsx}'],
+    files: ['src/**/*.{js,jsx}', 'tests/**/*.{js,jsx}'],
     languageOptions: {
       globals: globals.browser,
       parserOptions: { ecmaFeatures: { jsx: true } },
@@ -30,5 +30,9 @@ export default [
     },
   },
   { files: ['*.cjs'], languageOptions: { globals: globals.node } },
+  {
+    files: ['tests/**/*.{js,jsx,cjs}'],
+    languageOptions: { globals: { ...globals.jest, ...globals.node } },
+  },
   prettier,
 ];

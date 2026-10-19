@@ -10,8 +10,8 @@ const foundations = [
 ];
 const roadmap = [
   'Foundation',
-  'Task essentials',
-  'State & storage',
+  'UI components',
+  'Tasks & storage',
   'Search & filters',
   'Testing & polish',
   'Final delivery',
@@ -26,7 +26,7 @@ export default function DashboardPage() {
         </PageHeading>
         <span className="week-pill">
           <span className="status-dot" />
-          Week 01 of 06
+          Week 02 of 06
         </span>
       </div>
       <section className="welcome-card" aria-labelledby="welcome-title">
@@ -70,20 +70,20 @@ export default function DashboardPage() {
       <section aria-label="Project foundation at a glance" className="stats-grid">
         <StatCard
           label="Workspace routes"
-          value="03"
-          detail="Overview, tasks, and settings"
+          value="04"
+          detail="Overview, tasks, settings, and components"
           icon="layers"
         />
         <StatCard
           label="Development commands"
-          value="05"
+          value="07"
           detail="A consistent local workflow"
           icon="code"
         />
         <StatCard
           label="Current milestone"
-          value="01 / 06"
-          detail="Project setup and planning"
+          value="02 / 06"
+          detail="Reusable UI component library"
           icon="clock"
         />
       </section>
@@ -140,10 +140,10 @@ export default function DashboardPage() {
         </div>
         <ol className="roadmap-list">
           {roadmap.map((label, index) => (
-            <li key={label} className={index === 0 ? 'current-step' : ''}>
+            <li key={label} className={index === 1 ? 'current-step' : ''}>
               <span className="step-number">0{index + 1}</span>
               <span>{label}</span>
-              {index === 0 && <small>Current week</small>}
+              {index === 1 && <small>Current week</small>}
             </li>
           ))}
         </ol>

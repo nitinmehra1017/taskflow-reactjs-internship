@@ -5,6 +5,7 @@ import Icon from './Icon';
 const navigation = [
   { to: '/', label: 'Overview', icon: 'dashboard' },
   { to: '/tasks', label: 'Tasks', icon: 'tasks' },
+  { to: '/components', label: 'Components', icon: 'layers' },
   { to: '/settings', label: 'Settings', icon: 'settings' },
 ];
 
@@ -50,7 +51,7 @@ export default function Sidebar() {
         </div>
         <div className="sidebar-footer">
           <span className="status-dot" />
-          Week 1 · Foundation<span>v0.1</span>
+          Week 2 · Components<span>v0.2</span>
         </div>
       </div>
     </aside>

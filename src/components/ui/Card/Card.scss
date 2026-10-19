@@ -1,0 +1,53 @@
+@use '../../../styles/tokens' as t;
+.ui-card {
+  min-width: 0;
+  border: 1px solid #dce4da;
+  border-radius: t.$radius-lg;
+  background: t.$surface;
+  padding: t.$space-5;
+  font-family: t.$font;
+  color: t.$ink;
+  overflow-wrap: anywhere;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: t.$space-4;
+    flex-wrap: wrap;
+  }
+  &__title {
+    font-size: t.$text-lg;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+  &__description {
+    margin-top: t.$space-2;
+    font-size: t.$text-sm;
+    line-height: 1.7;
+    color: t.$muted;
+  }
+  &__actions {
+    display: flex;
+    gap: t.$space-2;
+    flex-wrap: wrap;
+  }
+  &__header + &__body {
+    margin-top: t.$space-5;
+  }
+  &__body {
+    font-size: t.$text-md;
+    line-height: 1.8;
+  }
+  &__footer {
+    border-top: 1px solid #e4e9e2;
+    margin-top: t.$space-5;
+    padding-top: t.$space-4;
+    font-size: t.$text-sm;
+    line-height: 1.6;
+  }
+}
+@media (max-width: 480px) {
+  .ui-card {
+    padding: t.$space-4;
+  }
+}

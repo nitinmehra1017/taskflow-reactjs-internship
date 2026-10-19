@@ -4,8 +4,12 @@ import Icon from './Icon';
 export default function Header() {
   const { pathname } = useLocation();
   const title =
-    { '/': 'Overview', '/tasks': 'Tasks', '/settings': 'Settings' }[pathname] ||
-    'Page not found';
+    {
+      '/': 'Overview',
+      '/tasks': 'Tasks',
+      '/settings': 'Settings',
+      '/components': 'Components',
+    }[pathname] || 'Page not found';
   return (
     <header className="topbar">
       <p className="breadcrumb">

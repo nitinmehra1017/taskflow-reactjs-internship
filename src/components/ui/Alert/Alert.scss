@@ -1,0 +1,64 @@
+@use '../../../styles/tokens' as t;
+.ui-alert {
+  display: flex;
+  align-items: flex-start;
+  gap: t.$space-3;
+  padding: t.$space-4;
+  border-radius: t.$radius-md;
+  font-family: t.$font;
+  font-size: t.$text-sm;
+  line-height: 1.7;
+  min-width: 0;
+  &--success {
+    background: t.$success-bg;
+    color: t.$success-ink;
+  }
+  &--error {
+    background: t.$error-bg;
+    color: t.$error-ink;
+  }
+  &--warning {
+    background: t.$warning-bg;
+    color: t.$warning-ink;
+  }
+  &--information {
+    background: t.$info-bg;
+    color: t.$info-ink;
+  }
+  &__symbol {
+    display: grid;
+    place-items: center;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    width: 19px;
+    height: 19px;
+    margin-top: 2px;
+    flex-shrink: 0;
+    font-weight: 700;
+    line-height: 1;
+  }
+  &__content {
+    min-width: 0;
+    flex: 1;
+    overflow-wrap: anywhere;
+  }
+  &__title {
+    font-weight: 650;
+    margin-bottom: t.$space-1;
+    color: inherit;
+  }
+  &__dismiss {
+    @include t.focus-ring;
+    display: grid;
+    place-items: center;
+    color: inherit;
+    background: none;
+    border: 0;
+    border-radius: t.$radius-sm;
+    min-width: 44px;
+    min-height: 44px;
+    margin: -8px -8px -8px 0;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}

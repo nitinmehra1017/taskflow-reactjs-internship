@@ -1,8 +1,8 @@
 {
   "name": "taskflow-reactjs-internship",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
-  "description": "TaskFlow — Week 1 ReactJS internship foundation and project plan",
+  "description": "TaskFlow ReactJS internship reusable UI library",
   "engines": {
     "node": "^22.14.0 || ^24.0.0",
     "npm": ">=10"
@@ -12,7 +12,9 @@
     "build": "webpack --mode production",
     "lint": "eslint . --max-warnings 0",
     "format": "prettier . --write",
-    "format:check": "prettier . --check"
+    "format:check": "prettier . --check",
+    "test": "jest --runInBand",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "react": "^19.2.0",
@@ -24,6 +26,10 @@
     "@babel/preset-env": "^7.28.0",
     "@babel/preset-react": "^7.27.0",
     "@eslint/js": "^10.0.0",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.8",
+    "babel-jest": "^30.5.2",
     "babel-loader": "^10.0.0",
     "css-loader": "^7.1.2",
     "eslint": "^10.13.0",
@@ -32,8 +38,12 @@
     "eslint-plugin-react-x": "^5.28.2",
     "globals": "^16.5.0",
     "html-webpack-plugin": "^5.6.0",
+    "jest": "^30.5.2",
+    "jest-environment-jsdom": "^30.5.2",
     "mini-css-extract-plugin": "^2.9.0",
     "prettier": "^3.6.0",
+    "sass": "^1.105.2",
+    "sass-loader": "^17.0.1",
     "style-loader": "^4.0.0",
     "webpack": "^5.105.0",
     "webpack-cli": "^6.0.1",

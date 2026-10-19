@@ -1,0 +1,37 @@
+@use '../../../styles/tokens' as t;
+.ui-badge {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  padding: t.$space-1 t.$space-3;
+  border-radius: 999px;
+  font-family: t.$font;
+  font-size: t.$text-sm;
+  font-weight: 600;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+  &--sm {
+    padding: 2px t.$space-2;
+    font-size: 0.6875rem;
+  }
+  &--success {
+    background: t.$success-bg;
+    color: t.$success-ink;
+  }
+  &--warning {
+    background: t.$warning-bg;
+    color: t.$warning-ink;
+  }
+  &--error {
+    background: t.$error-bg;
+    color: t.$error-ink;
+  }
+  &--neutral {
+    background: t.$neutral-bg;
+    color: t.$muted;
+  }
+  &--information {
+    background: t.$info-bg;
+    color: t.$info-ink;
+  }
+}

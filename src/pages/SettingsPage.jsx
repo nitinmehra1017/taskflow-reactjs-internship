@@ -7,6 +7,8 @@ const commands = [
   ['npm run lint', 'Check JavaScript, JSX, React, and Hooks rules'],
   ['npm run format', 'Apply the shared formatting conventions'],
   ['npm run format:check', 'Check formatting without changing files'],
+  ['npm test', 'Run the component and route behavior tests'],
+  ['npm run test:watch', 'Watch and rerun tests while developing'],
 ];
 
 export default function SettingsPage() {
@@ -46,7 +48,7 @@ export default function SettingsPage() {
             </li>
             <li>
               <strong>React Router</strong>
-              <span>A shared shell across three routes</span>
+              <span>A shared shell across four routes</span>
             </li>
             <li>
               <strong>ESLint + Prettier</strong>
