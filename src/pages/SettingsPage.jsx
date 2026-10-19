@@ -48,14 +48,16 @@ export default function SettingsPage() {
             </li>
             <li>
               <strong>React Router</strong>
-              <span>A shared shell across four routes</span>
+              <span>A shared shell across five routes</span>
             </li>
             <li>
               <strong>ESLint + Prettier</strong>
               <span>Consistent code from day one</span>
             </li>
           </ul>
-          <span className="subtle-badge">PREFERENCES PLANNED FOR WEEK 4</span>
+          <span className="subtle-badge">
+            PREFERENCES RESERVED FOR A FUTURE ITERATION
+          </span>
         </section>
       </div>
       <details className="panel setup-details">

@@ -37,6 +37,7 @@ function TaskCard({ task, onEdit, onDelete, onToggle }) {
         }
       >
         <div className="task-badges">
+          {task.sourceId && <Badge variant="information">Imported local copy</Badge>}
           <Badge variant={task.status === 'completed' ? 'success' : 'neutral'}>
             {statusLabel(task.status)}
           </Badge>

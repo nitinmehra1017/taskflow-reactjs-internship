@@ -11,6 +11,7 @@ export default function useRouteFocus() {
     const titles = {
       '/': 'Overview',
       '/tasks': 'Tasks',
+      '/explore': 'Explore',
       '/settings': 'Settings',
       '/components': 'Components',
     };

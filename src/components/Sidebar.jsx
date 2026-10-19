@@ -5,6 +5,7 @@ import Icon from './Icon';
 const navigation = [
   { to: '/', label: 'Overview', icon: 'dashboard' },
   { to: '/tasks', label: 'Tasks', icon: 'tasks' },
+  { to: '/explore', label: 'Explore', icon: 'book' },
   { to: '/components', label: 'Components', icon: 'layers' },
   { to: '/settings', label: 'Settings', icon: 'settings' },
 ];
@@ -51,7 +52,7 @@ export default function Sidebar() {
         </div>
         <div className="sidebar-footer">
           <span className="status-dot" />
-          Week 3 · Tasks<span>v0.3</span>
+          Week 4 · Remote API<span>v0.4</span>
         </div>
       </div>
     </aside>

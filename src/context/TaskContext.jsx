@@ -3,6 +3,7 @@ import { taskReducer } from '../reducers/taskReducer';
 import { useLocalStorage } from '../hooks/useLocalStorage';
 import { taskStatistics } from '../utils/taskStatistics';
 import { validateTask } from '../utils/taskValidation';
+import { validRemoteTodo, remoteSourceId } from '../utils/remoteTaskValidation';
 export const TaskContext = createContext(null);
 function clean(values) {
   if (Object.keys(validateTask(values)).length) throw new Error('Invalid task');
@@ -32,6 +33,26 @@ export function TaskProvider({ children }) {
       },
     });
   }, []);
+  const importRemoteTask = useCallback((todo) => {
+    if (!validRemoteTodo(todo)) throw new Error('Invalid remote task');
+    const timestamp = new Date().toISOString();
+    dispatch({
+      type: 'add',
+      task: {
+        ...clean({
+          title: todo.title,
+          description: '',
+          priority: 'medium',
+          status: todo.completed ? 'completed' : 'pending',
+          dueDate: '',
+        }),
+        sourceId: remoteSourceId(todo.id),
+        id: crypto.randomUUID(),
+        createdAt: timestamp,
+        updatedAt: timestamp,
+      },
+    });
+  }, []);
   const updateTask = useCallback(
     (id, values) =>
       dispatch({
@@ -54,11 +75,21 @@ export function TaskProvider({ children }) {
       stats,
       storageError: error,
       addTask,
+      importRemoteTask,
       updateTask,
       deleteTask,
       toggleTaskStatus,
     }),
-    [tasks, stats, error, addTask, updateTask, deleteTask, toggleTaskStatus],
+    [
+      tasks,
+      stats,
+      error,
+      addTask,
+      importRemoteTask,
+      updateTask,
+      deleteTask,
+      toggleTaskStatus,
+    ],
   );
   return <TaskContext value={value}>{children}</TaskContext>;
 }

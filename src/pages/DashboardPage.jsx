@@ -14,7 +14,7 @@ const roadmap = [
   'Foundation',
   'UI components',
   'Tasks & storage',
-  'Search & filters',
+  'Remote API',
   'Testing & polish',
   'Final delivery',
 ];
@@ -29,7 +29,7 @@ export default function DashboardPage() {
         </PageHeading>
         <span className="week-pill">
           <span className="status-dot" />
-          Week 03 of 06
+          Week 04 of 06
         </span>
       </div>
       <section className="welcome-card" aria-labelledby="welcome-title">
@@ -146,10 +146,10 @@ export default function DashboardPage() {
         </div>
         <ol className="roadmap-list">
           {roadmap.map((label, index) => (
-            <li key={label} className={index === 2 ? 'current-step' : ''}>
+            <li key={label} className={index === 3 ? 'current-step' : ''}>
               <span className="step-number">0{index + 1}</span>
               <span>{label}</span>
-              {index === 2 && <small>Current week</small>}
+              {index === 3 && <small>Current week</small>}
             </li>
           ))}
         </ol>

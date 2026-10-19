@@ -12,7 +12,14 @@ export function validDate(value) {
 }
 export function validateTask(task) {
   const errors = {};
-  if (!task.title?.trim()) errors.title = 'Enter a task title.';
+  if (
+    task.sourceId !== undefined &&
+    (typeof task.sourceId !== 'string' ||
+      !/^jsonplaceholder:todo:[1-9]\d*$/.test(task.sourceId))
+  )
+    errors.sourceId = 'Invalid remote source.';
+  if (typeof task.title !== 'string' || !task.title.trim())
+    errors.title = 'Enter a task title.';
   else if (task.title.length > 120) errors.title = 'Use 120 characters or fewer.';
   if (typeof task.description !== 'string' || task.description.length > 2000)
     errors.description = 'Use 2000 characters or fewer.';
@@ -26,6 +33,8 @@ export function validTasks(tasks) {
   return (
     Array.isArray(tasks) &&
     new Set(tasks.map((t) => t?.id)).size === tasks.length &&
+    new Set(tasks.filter((t) => t?.sourceId).map((t) => t.sourceId)).size ===
+      tasks.filter((t) => t?.sourceId).length &&
     tasks.every(
       (t) =>
         t &&

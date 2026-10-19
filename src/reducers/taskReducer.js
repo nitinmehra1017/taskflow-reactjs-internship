@@ -1,7 +1,13 @@
 export function taskReducer(tasks, action) {
   switch (action.type) {
     case 'add':
-      return tasks.some((t) => t.id === action.task.id) ? tasks : [action.task, ...tasks];
+      return tasks.some(
+        (t) =>
+          t.id === action.task.id ||
+          (action.task.sourceId && t.sourceId === action.task.sourceId),
+      )
+        ? tasks
+        : [action.task, ...tasks];
     case 'update':
       return tasks.map((t) =>
         t.id === action.id

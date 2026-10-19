@@ -1,3 +1,4 @@
+import ExplorePage from './pages/ExplorePage';
 import { TaskProvider } from './context/TaskContext';
 import { Route, Routes } from 'react-router-dom';
 import AppLayout from './layouts/AppLayout';
@@ -13,6 +14,7 @@ export default function App() {
       <Routes>
         <Route element={<AppLayout />}>
           <Route index element={<DashboardPage />} />
+          <Route path="explore" element={<ExplorePage />} />
           <Route path="tasks" element={<TasksPage />} />
           <Route path="settings" element={<SettingsPage />} />
           <Route path="components" element={<ComponentsPage />} />

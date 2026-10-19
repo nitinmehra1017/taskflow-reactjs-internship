@@ -7,6 +7,7 @@ export default function Header() {
     {
       '/': 'Overview',
       '/tasks': 'Tasks',
+      '/explore': 'Explore',
       '/settings': 'Settings',
       '/components': 'Components',
     }[pathname] || 'Page not found';
