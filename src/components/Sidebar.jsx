@@ -51,7 +51,7 @@ export default function Sidebar() {
         </div>
         <div className="sidebar-footer">
           <span className="status-dot" />
-          Week 2 · Components<span>v0.2</span>
+          Week 3 · Tasks<span>v0.3</span>
         </div>
       </div>
     </aside>

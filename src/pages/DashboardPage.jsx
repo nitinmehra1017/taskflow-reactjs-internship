@@ -1,3 +1,5 @@
+import { useTasks } from '../hooks/useTasks';
+import { Alert } from '../components/ui';
 import { Link } from 'react-router-dom';
 import Icon from '../components/Icon';
 import PageHeading from '../components/PageHeading';
@@ -18,6 +20,7 @@ const roadmap = [
 ];
 
 export default function DashboardPage() {
+  const { stats, storageError } = useTasks();
   return (
     <>
       <div className="heading-row">
@@ -26,7 +29,7 @@ export default function DashboardPage() {
         </PageHeading>
         <span className="week-pill">
           <span className="status-dot" />
-          Week 02 of 06
+          Week 03 of 06
         </span>
       </div>
       <section className="welcome-card" aria-labelledby="welcome-title">
@@ -67,25 +70,28 @@ export default function DashboardPage() {
           <span className="art-dots">···</span>
         </div>
       </section>
-      <section aria-label="Project foundation at a glance" className="stats-grid">
-        <StatCard
-          label="Workspace routes"
-          value="04"
-          detail="Overview, tasks, settings, and components"
-          icon="layers"
-        />
-        <StatCard
-          label="Development commands"
-          value="07"
-          detail="A consistent local workflow"
-          icon="code"
-        />
-        <StatCard
-          label="Current milestone"
-          value="02 / 06"
-          detail="Reusable UI component library"
-          icon="clock"
-        />
+      {storageError && (
+        <Alert variant="warning" title="Device storage unavailable">
+          {storageError}
+        </Alert>
+      )}
+      <section aria-label="Task statistics" className="stats-grid">
+        {[
+          ['Total tasks', stats.total],
+          ['Completed tasks', stats.completed],
+          ['Pending tasks', stats.pending],
+          ['In-progress tasks', stats.inProgress],
+          ['High-priority tasks', stats.highPriority],
+          ['Completion', `${stats.completion}%`],
+        ].map(([label, value]) => (
+          <StatCard
+            key={label}
+            label={label}
+            value={String(value)}
+            detail="From your saved task collection"
+            icon="tasks"
+          />
+        ))}
       </section>
       <div className="content-grid">
         <section className="panel foundation-panel" aria-labelledby="foundation-title">
@@ -116,19 +122,19 @@ export default function DashboardPage() {
         </section>
         <section className="panel task-preview" aria-labelledby="task-preview-title">
           <div className="panel-heading">
-            <h2 id="task-preview-title">Your next chapter</h2>
-            <span className="subtle-badge">PLANNED</span>
+            <h2 id="task-preview-title">Your focus today</h2>
+            <span className="subtle-badge">WEEK 3</span>
           </div>
           <div className="empty-icon">
             <Icon name="tasks" size={30} />
           </div>
           <h3>A clear space. A fresh start.</h3>
           <p>
-            Tasks will live here. Creating, organizing, and completing them arrives in the
-            coming weeks.
+            Create tasks, set priorities, and track completion. Your changes stay on this
+            device when storage is available.
           </p>
           <Link to="/tasks" className="text-link">
-            Preview the task space
+            Manage your tasks
             <Icon name="arrow" size={17} />
           </Link>
         </section>
@@ -140,10 +146,10 @@ export default function DashboardPage() {
         </div>
         <ol className="roadmap-list">
           {roadmap.map((label, index) => (
-            <li key={label} className={index === 1 ? 'current-step' : ''}>
+            <li key={label} className={index === 2 ? 'current-step' : ''}>
               <span className="step-number">0{index + 1}</span>
               <span>{label}</span>
-              {index === 1 && <small>Current week</small>}
+              {index === 2 && <small>Current week</small>}
             </li>
           ))}
         </ol>

@@ -4,6 +4,7 @@ import './Input.scss';
 /** Labeled native input. Accepts controlled value/onChange or native defaultValue. */
 export default function Input({
   label,
+  multiline = false,
   id,
   helperText,
   error,
@@ -19,13 +20,14 @@ export default function Input({
       .filter(Boolean)
       .join(' ') || undefined;
 
+  const Control = multiline ? 'textarea' : 'input';
   return (
     <div className={`ui-field ${className}`}>
       <label className="ui-field__label" htmlFor={inputId}>
         {label}
         {required && <span aria-hidden="true"> *</span>}
       </label>
-      <input
+      <Control
         {...props}
         id={inputId}
         required={required}
