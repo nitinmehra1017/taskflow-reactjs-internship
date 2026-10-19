@@ -1,0 +1,9 @@
+Week 5 of my YuvaIntern Junior ReactJS Developer Internship focused on testing, debugging, and code quality assurance for the existing TaskFlow application. I preserved the completed Week 1–4 functionality and worked on the week-5-testing-qa branch.
+
+The project now contains 111 passing tests across 10 suites, with zero failures in the final coverage run. Jest, React Testing Library, user-event, jest-dom, and jest-axe cover reusable components, reducers, validation, custom hooks, browser storage, API services, and routed application workflows. Coverage includes all application JavaScript and JSX: statements 97.78%, branches 96.25%, functions 98.40%, and lines 98.63%. All four enforced 80% thresholds are satisfied.
+
+Integration tests verify task creation, dashboard updates, editing, completion, reopening, confirmed deletion, persistence after remounting, combined filters, remote imports, and duplicate prevention. Deterministic fetch mocks test loading, failures, retry, cancellation, and stale responses without relying on public API availability.
+
+I reproduced and fixed two keyboard focus defects involving filtered task removal and remote-request retry. Three regression assertions failed before the fixes and passed afterward. Eight automated accessibility tests passed. Actual browser checks covered five routes at desktop, tablet, and mobile widths, with screenshots and overflow measurements.
+
+GitHub Actions successfully executed installation, linting, formatting, coverage tests, and production build checks. Documentation includes a test matrix, debugging log, technical guide, Word report, and genuine evidence. Remaining limitations include unverified independent browser engines, a pending assistive-technology audit, three build performance warnings, and 26 development dependency advisory entries. The production-only dependency audit reports zero vulnerabilities.

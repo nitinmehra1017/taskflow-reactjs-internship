@@ -1,0 +1,62 @@
+[
+  {
+    "file": "chrome-mobile-dialog.jpg",
+    "bytes": 28605,
+    "sha256": "ad14f68f8d8699eae8c9d5c6f0bf07d2e5840c94b74ab713212fb5925cb7eb50"
+  },
+  {
+    "file": "chrome-settings-1440.jpg",
+    "bytes": 76237,
+    "sha256": "5a4f4df2583de60378693af32a8ffd207090102119c035550139202dfd5ba998"
+  },
+  {
+    "file": "chrome-settings-390.jpg",
+    "bytes": 37865,
+    "sha256": "81cba75aaaf0633814bf03819c1e6ba387a7472359492e02c5753bb32f23a44d"
+  },
+  {
+    "file": "chrome-settings-768.jpg",
+    "bytes": 57214,
+    "sha256": "805010ff3407c17aa95e14f400c93bd0aa1947ac2ee09d0a70aaf7c5c8bb6ff5"
+  },
+  {
+    "file": "controlled-api-error.jpg",
+    "bytes": 63255,
+    "sha256": "23851ad31168d2dc284c099f594850bb1e7c574dcb42490f55ad0e68d2d587d6"
+  },
+  {
+    "file": "desktop-dashboard.jpg",
+    "bytes": 87876,
+    "sha256": "2f333d10c6727cdf35e4c57ee458f21e607b13fdc02651fb8fbc403db27eda3e"
+  },
+  {
+    "file": "desktop-validation.jpg",
+    "bytes": 66877,
+    "sha256": "4ce1e2f1c06f1a8a717229be9be14ecd07a402dc0fb99e11412e0471a04d4b6d"
+  },
+  {
+    "file": "filtered-completion-focus-fix.jpg",
+    "bytes": 71118,
+    "sha256": "de8abbee5a9ed6c852c4be3a93badd24837b65e99c1ba16bdf4868a79a571276"
+  },
+  {
+    "file": "filtered-edit-focus-fix.jpg",
+    "bytes": 58576,
+    "sha256": "71f1550a6bb200a146fd8a2b934d5e92496cd7d9fe36b0a2e7cc6afca36c777c"
+  },
+  {
+    "file": "retry-focus-fix.jpg",
+    "bytes": 75417,
+    "sha256": "4a8cb552a77c72c96e94745b69a5f5da0a871390e49a53271a6d7d22bd93029b"
+  },
+  {
+    "file": "settings-1440.jpg",
+    "bytes": 73954,
+    "sha256": "9c90b9adeed27fe034241c8e19877341238d4a4f6056d1df54a8aeafcf5f3cb8"
+  },
+  {
+    "file": "tablet-tasks.jpg",
+    "bytes": 60290,
+    "sha256": "077f4d03b727f66a64bd2be7aaac619ddfc05c44d01ce1ca0290e03416638b3f"
+  }
+]

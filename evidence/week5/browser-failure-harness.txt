@@ -1,0 +1,16 @@
+// TEMPORARY BROWSER VERIFICATION ENTRY. Removed before final validation.
+// Only the first two endpoint calls fail; successful responses always use real Fetch.
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
+import './styles/global.css';
+const realFetch = window.fetch.bind(window);
+let failedCalls = 0;
+window.fetch = (url, options) => {
+  if (String(url).startsWith('https://jsonplaceholder.typicode.com') && failedCalls < 2) {
+    failedCalls += 1;
+    return Promise.reject(new TypeError('Deliberate verification network failure'));
+  }
+  return realFetch(url, options);
+};
+createRoot(document.getElementById('root')).render(<><p style={{padding:16,background:'#fff0ca',color:'#163f38'}}>Verification mode: initial network failure is simulated. Retry fetches real JSONPlaceholder records.</p><BrowserRouter><App /></BrowserRouter></>);

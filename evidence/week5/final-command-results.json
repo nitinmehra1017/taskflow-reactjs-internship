@@ -1,0 +1,17 @@
+{
+  "npm ci": 0,
+  "npm test -- --watch=false --coverage": 0,
+  "npm run lint": 0,
+  "npm run format:check": 0,
+  "npm run build": 0,
+  "npm audit": 1,
+  "testsPassed": 111,
+  "testsFailed": 0,
+  "suitesPassed": 10,
+  "buildWarnings": 3,
+  "audit": {
+    "moderate": 21,
+    "high": 5,
+    "critical": 0
+  }
+}

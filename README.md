@@ -149,3 +149,7 @@ TaskFlow is an internship learning project. The current starter has no backend, 
 - [ESLint flat configuration](https://eslint.org/docs/latest/use/configure/configuration-files)
 - [React documentation](https://react.dev/learn)
 - [React Router documentation](https://reactrouter.com/start/declarative/installation)
+
+## Week 5 testing and quality assurance
+
+Week 5 adds 45 tests (111 passing across 10 suites), two keyboard focus fixes and GitHub Actions. Coverage is 97.78% statements, 96.25% branches, 98.40% functions and 98.63% lines. Run `npm test -- --watch=false --coverage` and `npm run test:a11y`. See [technical report](docs/Week5_Testing_and_Code_Quality.md), [test matrix](docs/Week5_Test_Cases.md), [debugging log](docs/Week5_Debugging_Log.md) and [evidence](evidence/week5/README.md). The full dependency audit retains 26 development advisory entries; production-only audit reports zero. Independent engine and assistive-technology checks remain outstanding.

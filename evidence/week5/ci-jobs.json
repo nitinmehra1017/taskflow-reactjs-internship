@@ -1,0 +1,129 @@
+{
+  "total_count": 1,
+  "jobs": [
+    {
+      "id": 118192886320,
+      "run_id": 39291464514,
+      "workflow_name": "TaskFlow quality checks",
+      "head_branch": "week-5-testing-qa",
+      "run_url": "https://api.github.com/repos/nitinmehra1017/taskflow-reactjs-internship/actions/runs/39291464514",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVPox4c8AAAAbhNhSMA",
+      "head_sha": "cac61a271297b08b0c87d00c5a3e98d8be5aa946",
+      "url": "https://api.github.com/repos/nitinmehra1017/taskflow-reactjs-internship/actions/jobs/118192886320",
+      "html_url": "https://github.com/nitinmehra1017/taskflow-reactjs-internship/actions/runs/39291464514/job/118192886320",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-19T17:07:41Z",
+      "started_at": "2026-10-19T17:07:44Z",
+      "completed_at": "2026-10-19T17:08:27Z",
+      "name": "quality",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-19T17:07:45Z",
+          "completed_at": "2026-10-19T17:07:46Z"
+        },
+        {
+          "name": "Run actions/checkout@v6",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-19T17:07:46Z",
+          "completed_at": "2026-10-19T17:07:48Z"
+        },
+        {
+          "name": "Run actions/setup-node@v6",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-19T17:07:48Z",
+          "completed_at": "2026-10-19T17:07:49Z"
+        },
+        {
+          "name": "Run npm ci",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-10-19T17:07:49Z",
+          "completed_at": "2026-10-19T17:08:00Z"
+        },
+        {
+          "name": "Run npm run lint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-10-19T17:08:00Z",
+          "completed_at": "2026-10-19T17:08:03Z"
+        },
+        {
+          "name": "Run npm run format:check",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-10-19T17:08:03Z",
+          "completed_at": "2026-10-19T17:08:05Z"
+        },
+        {
+          "name": "Run npm run test:ci",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-10-19T17:08:05Z",
+          "completed_at": "2026-10-19T17:08:15Z"
+        },
+        {
+          "name": "Run npm run build",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-10-19T17:08:15Z",
+          "completed_at": "2026-10-19T17:08:21Z"
+        },
+        {
+          "name": "Upload coverage reports",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-10-19T17:08:21Z",
+          "completed_at": "2026-10-19T17:08:23Z"
+        },
+        {
+          "name": "Post Run actions/setup-node@v6",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-10-19T17:08:23Z",
+          "completed_at": "2026-10-19T17:08:25Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v6",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-10-19T17:08:25Z",
+          "completed_at": "2026-10-19T17:08:25Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-10-19T17:08:25Z",
+          "completed_at": "2026-10-19T17:08:25Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/nitinmehra1017/taskflow-reactjs-internship/check-runs/118192886320",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "runner_id": 1000000000,
+      "runner_name": "GitHub Actions 1000000000",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    }
+  ]
+}

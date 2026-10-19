@@ -1,0 +1,12 @@
+[
+  {
+    "route": "Tasks",
+    "scrollWidth": 768,
+    "width": 768
+  },
+  {
+    "route": "Components",
+    "scrollWidth": 768,
+    "width": 768
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "tests": 111,
+  "failed": 0,
+  "coverage": {
+    "lines": {
+      "total": 440,
+      "covered": 434,
+      "skipped": 0,
+      "pct": 98.63
+    },
+    "statements": {
+      "total": 497,
+      "covered": 486,
+      "skipped": 0,
+      "pct": 97.78
+    },
+    "functions": {
+      "total": 188,
+      "covered": 185,
+      "skipped": 0,
+      "pct": 98.4
+    },
+    "branches": {
+      "total": 427,
+      "covered": 411,
+      "skipped": 0,
+      "pct": 96.25
+    },
+    "branchesTrue": {
+      "total": 0,
+      "covered": 0,
+      "skipped": 0,
+      "pct": 100
+    }
+  }
+}

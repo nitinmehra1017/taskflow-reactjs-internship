@@ -1,0 +1,1 @@
+Final DOCX rendered successfully to 10 pages. All 10 page PNGs visually inspected. A screenshot-section spill in the initial 11-page render was corrected by reducing figure widths. Final review found no clipping, overlaps or orphan spill page.
