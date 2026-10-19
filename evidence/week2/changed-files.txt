@@ -12,6 +12,7 @@ A	evidence/week2/build-initial.log
 A	evidence/week2/build.log
 A	evidence/week2/button-variants.jpg
 A	evidence/week2/cards-and-badges.jpg
+A	evidence/week2/changed-files.txt
 A	evidence/week2/clean-install.log
 A	evidence/week2/command-output-build.jpg
 A	evidence/week2/command-output-full.jpg
@@ -22,6 +23,7 @@ A	evidence/week2/dev-server.log
 A	evidence/week2/environment.log
 A	evidence/week2/format-check.log
 A	evidence/week2/format.log
+A	evidence/week2/git-status.txt
 A	evidence/week2/input-validation.jpg
 A	evidence/week2/install.log
 A	evidence/week2/jest-results.json
