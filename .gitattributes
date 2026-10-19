@@ -1,0 +1,3 @@
+# Compiler output is genuine evidence; retain its original whitespace.
+evidence/*.log -whitespace
+*.docx binary

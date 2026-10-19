@@ -1,0 +1,36 @@
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: eslint-plugin-jsx-a11y@6.10.2
+npm warn Found: eslint@10.13.0
+npm warn node_modules/eslint
+npm warn   dev eslint@"^10.13.0" from the root project
+npm warn   5 more (@eslint-community/eslint-utils, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer eslint@"^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9" from eslint-plugin-jsx-a11y@6.10.2
+npm warn node_modules/eslint-plugin-jsx-a11y
+npm warn
+npm warn Conflicting peer dependency: eslint@9.39.5
+npm warn node_modules/eslint
+npm warn   peer eslint@"^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9" from eslint-plugin-jsx-a11y@6.10.2
+npm warn   node_modules/eslint-plugin-jsx-a11y
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: eslint-plugin-react@7.37.5
+npm warn Found: eslint@10.13.0
+npm warn node_modules/eslint
+npm warn   dev eslint@"^10.13.0" from the root project
+npm warn   5 more (@eslint-community/eslint-utils, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer eslint@"^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9.7" from eslint-plugin-react@7.37.5
+npm warn node_modules/eslint-plugin-react
+npm warn
+npm warn Conflicting peer dependency: eslint@9.39.5
+npm warn node_modules/eslint
+npm warn   peer eslint@"^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9.7" from eslint-plugin-react@7.37.5
+npm warn   node_modules/eslint-plugin-react
+
+added 43 packages, removed 125 packages, and changed 13 packages in 5s
+npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+npm warn install-scripts   fsevents@2.3.3 (install: (install scripts present))
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.

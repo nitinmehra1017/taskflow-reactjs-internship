@@ -1,0 +1,48 @@
+
+> taskflow-reactjs-internship@0.1.0 build
+> webpack --mode production
+
+assets by path assets/ 284 KiB
+  assets by path assets/*.js 266 KiB
+    asset assets/8.d6b5e5a9.js 250 KiB [emitted] [immutable] [minimized] [big] (id hint: vendors) 2 related assets
+    asset assets/main.13877f2d.js 13.7 KiB [emitted] [immutable] [minimized] (name: main) 1 related asset
+    asset assets/runtime.69b6354b.js 1.66 KiB [emitted] [immutable] [minimized] (name: runtime) 1 related asset
+  asset assets/main.0b1596f2.css 17.9 KiB [emitted] [immutable] (name: main) 1 related asset
+  asset assets/taskflow-mark.4c0b9d52.svg 264 bytes [emitted] [immutable] [from: src/assets/taskflow-mark.svg] (auxiliary name: main)
+asset index.html 700 bytes [emitted] [minimized]
+asset taskflow-mark.svg 264 bytes [emitted]
+Entrypoint main [big] 284 KiB (1.46 MiB) = assets/runtime.69b6354b.js 1.66 KiB assets/8.d6b5e5a9.js 250 KiB assets/main.0b1596f2.css 17.9 KiB assets/main.13877f2d.js 13.7 KiB 5 auxiliary assets
+orphan modules 82.6 KiB (javascript) 1000 bytes (runtime) [orphan] 24 modules
+runtime modules 3.99 KiB 7 modules
+cacheable modules 1.02 MiB (javascript) 17.9 KiB (css/mini-extract) 264 bytes (asset)
+  javascript modules 1.02 MiB
+    modules by path ./node_modules/react/ 19 KiB 4 modules
+    modules by path ./node_modules/react-dom/ 620 KiB 4 modules
+    modules by path ./node_modules/scheduler/ 10.1 KiB 2 modules
+    ./src/index.jsx + 13 modules 24 KiB [built] [code generated]
+    ./node_modules/react-router/dist/development/chunk-OB3PAWPO.mjs 367 KiB [built] [code generated]
+  modules by path ./src/styles/*.css 17.9 KiB
+    css ./node_modules/css-loader/dist/cjs.js!./src/styles/shell.css 5 KiB [built] [code generated]
+    css ./node_modules/css-loader/dist/cjs.js!./src/styles/dashboard.css 9.86 KiB [built] [code generated]
+    css ./node_modules/css-loader/dist/cjs.js!./src/styles/global.css 3.03 KiB [built] [code generated]
+  ./src/assets/taskflow-mark.svg 264 bytes (asset) 42 bytes (javascript) [built] [code generated]
+
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  assets/8.d6b5e5a9.js (250 KiB)
+    Largest modules: ./node_modules/react-dom/cjs/react-dom-client.production.js (611 KiB), ./node_modules/react-router/dist/development/chunk-OB3PAWPO.mjs (367 KiB), ./node_modules/react/cjs/react.production.js (17.6 KiB)
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (284 KiB)
+      assets/runtime.69b6354b.js
+      assets/8.d6b5e5a9.js
+      assets/main.0b1596f2.css
+      assets/main.13877f2d.js
+
+WARNING in webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+
+webpack 5.112.0 compiled with 3 warnings in 1690 ms
