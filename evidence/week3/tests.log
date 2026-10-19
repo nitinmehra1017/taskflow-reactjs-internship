@@ -1,0 +1,10 @@
+
+> taskflow-reactjs-internship@0.2.0 test
+> jest --runInBand --watch=false
+
+
+Test Suites: 3 passed, 3 total
+Tests:       44 passed, 44 total
+Snapshots:   0 total
+Time:        3.197 s
+Ran all test suites.

@@ -1,3 +1,9 @@
+## Week 3 update
+
+TaskFlow now supports task creation, editing, completion/reopening, confirmation-based deletion, combined search/status/priority filters and six live dashboard statistics. Validated localStorage persists tasks on this device. The Week 2 component showcase and prior documentation remain available.
+
+Read [Week 3 architecture and verification](docs/Week3_State_Management_and_Hooks.md). Run `npm ci`, then `npm start` and visit http://localhost:3000/tasks. Run `npm test -- --watch=false`, `npm run lint`, `npm run format:check` and `npm run build` for verification. Current results: 44 tests passed; lint/format/build pass. Build emits three performance warnings. Installation/audit reports 26 dependency advisories, including five high findings in development dependencies; see the Week 3 report for scope and follow-up details. No backend or multi-tab synchronization is provided.
+
 # TaskFlow
 
 **A calmer workspace for focused work.** A ReactJS project through Week 2 of the YuvaIntern Junior ReactJS Developer Internship.

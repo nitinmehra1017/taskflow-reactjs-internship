@@ -1,0 +1,62 @@
+[
+  {
+    "file": "command-output-browser-view.jpg",
+    "width": 1280,
+    "height": 2149,
+    "sha256": "97cbfddb0893ab44c5190f952fffa5172b124c90da8918d372c4f10e6b9d1e71"
+  },
+  {
+    "file": "creation-form.jpg",
+    "width": 1440,
+    "height": 1000,
+    "sha256": "80847bc07575c03417afef5eb5427b1174df26529e1e037989459630f378b992"
+  },
+  {
+    "file": "dashboard-statistics.jpg",
+    "width": 1440,
+    "height": 1000,
+    "sha256": "4f33fd683f26aef593f7807c1f4eccb479499a055f67bbc6ba6405adba3694b0"
+  },
+  {
+    "file": "delete-confirmation.jpg",
+    "width": 768,
+    "height": 1000,
+    "sha256": "af1c9a11514670e546fea47a14301d8bb06bfec79d2a7cbbe4776a4344ba9252"
+  },
+  {
+    "file": "edit-task.jpg",
+    "width": 1440,
+    "height": 1000,
+    "sha256": "7f6ccf7461fcb6c64eac27e41b4d987b8b4c6edffbfba1923104d6488ba34824"
+  },
+  {
+    "file": "filters-search.jpg",
+    "width": 1440,
+    "height": 1000,
+    "sha256": "24bad187fb23714da28cd779c163ef52ab4258a305b83b15db35953519f75d3e"
+  },
+  {
+    "file": "mobile-390.jpg",
+    "width": 390,
+    "height": 1000,
+    "sha256": "69d03a60fdc9e278a3b563aea1ed5725d4bc5cbcdfb8411fe250271b7420754b"
+  },
+  {
+    "file": "persistence-after-refresh.jpg",
+    "width": 1440,
+    "height": 1000,
+    "sha256": "5f135977a8c70dfc5e5dbbc03ac914b68bdcec328d49218c229eea2adb66a178"
+  },
+  {
+    "file": "populated-list-desktop.jpg",
+    "width": 1440,
+    "height": 1000,
+    "sha256": "318a8bf089181ef4db682b1832efb005651c345f5c4630fcb1c85a3452788e24"
+  },
+  {
+    "file": "tablet-768.jpg",
+    "width": 768,
+    "height": 1000,
+    "sha256": "6187db3d0f5c4d861c981be6387a2ba1ea75ddd93bc45973a77e554cd19c1852"
+  }
+]
