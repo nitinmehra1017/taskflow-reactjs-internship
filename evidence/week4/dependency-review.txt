@@ -1,0 +1,34 @@
+Week 4 dependency review
+
+@istanbuljs/load-nyc-config: moderate; direct=false; suggested fix={"name":"babel-jest","version":"25.0.0","isSemVerMajor":true}
+@jest/core: moderate; direct=false; suggested fix={"name":"jest","version":"25.0.0","isSemVerMajor":true}
+@jest/expect: moderate; direct=false; suggested fix={"name":"jest","version":"25.0.0","isSemVerMajor":true}
+@jest/globals: moderate; direct=false; suggested fix={"name":"jest","version":"25.0.0","isSemVerMajor":true}
+@jest/reporters: moderate; direct=false; suggested fix={"name":"jest","version":"25.0.0","isSemVerMajor":true}
+@jest/transform: moderate; direct=false; suggested fix={"name":"babel-jest","version":"25.0.0","isSemVerMajor":true}
+argparse: moderate; direct=false; suggested fix={"name":"babel-jest","version":"25.0.0","isSemVerMajor":true}
+babel-jest: moderate; direct=true; suggested fix={"name":"babel-jest","version":"25.0.0","isSemVerMajor":true}
+babel-plugin-istanbul: moderate; direct=false; suggested fix={"name":"babel-jest","version":"25.0.0","isSemVerMajor":true}
+braces: high; direct=false; suggested fix={"name":"webpack-dev-server","version":"6.1.0","isSemVerMajor":true}
+  braces vulnerable to stack-exhaustion denial of service through deeply nested patterns
+  https://github.com/advisories/GHSA-vfj7-8cjw-p6xm
+chokidar: high; direct=false; suggested fix={"name":"webpack-dev-server","version":"6.1.0","isSemVerMajor":true}
+http-proxy-middleware: high; direct=false; suggested fix={"name":"webpack-dev-server","version":"6.1.0","isSemVerMajor":true}
+jest: moderate; direct=true; suggested fix={"name":"jest","version":"25.0.0","isSemVerMajor":true}
+jest-circus: moderate; direct=false; suggested fix={"name":"jest","version":"25.0.0","isSemVerMajor":true}
+jest-cli: moderate; direct=false; suggested fix={"name":"jest","version":"25.0.0","isSemVerMajor":true}
+jest-config: moderate; direct=false; suggested fix={"name":"jest","version":"25.0.0","isSemVerMajor":true}
+jest-resolve-dependencies: moderate; direct=false; suggested fix={"name":"jest","version":"25.0.0","isSemVerMajor":true}
+jest-runner: moderate; direct=false; suggested fix={"name":"jest","version":"25.0.0","isSemVerMajor":true}
+jest-runtime: moderate; direct=false; suggested fix={"name":"jest","version":"25.0.0","isSemVerMajor":true}
+jest-snapshot: moderate; direct=false; suggested fix={"name":"jest","version":"25.0.0","isSemVerMajor":true}
+js-yaml: moderate; direct=false; suggested fix={"name":"babel-jest","version":"25.0.0","isSemVerMajor":true}
+micromatch: high; direct=false; suggested fix={"name":"webpack-dev-server","version":"6.1.0","isSemVerMajor":true}
+sockjs: moderate; direct=false; suggested fix={"name":"webpack-dev-server","version":"6.1.0","isSemVerMajor":true}
+sprintf-js: moderate; direct=false; suggested fix={"name":"babel-jest","version":"25.0.0","isSemVerMajor":true}
+  sprintf-js vulnerable to denial of service through unbounded precision specifiers
+  https://github.com/advisories/GHSA-hp3w-g68c-fv3c
+uuid: moderate; direct=false; suggested fix={"name":"webpack-dev-server","version":"6.1.0","isSemVerMajor":true}
+  uuid: Missing buffer bounds check in v3/v5/v6 when buf is provided
+  https://github.com/advisories/GHSA-w5hq-g745-h8pq
+webpack-dev-server: high; direct=true; suggested fix={"name":"webpack-dev-server","version":"6.1.0","isSemVerMajor":true}

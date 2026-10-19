@@ -1,0 +1,104 @@
+[
+  {
+    "file": "dashboard-after-import.jpg",
+    "width": 1440,
+    "height": 1000,
+    "sha256": "e9ef354b532bc26578fe331ba034ad591d0922cf0bb5addbef863ce6c448b2b1"
+  },
+  {
+    "file": "empty-results.jpg",
+    "width": 390,
+    "height": 1581,
+    "sha256": "825a1802c38563d294e3bbc57cec583f30d06ea6d945ba1e81d8a27d4bd1525a"
+  },
+  {
+    "file": "error-controlled-failure.jpg",
+    "width": 1440,
+    "height": 1000,
+    "sha256": "0d0e8b12f06e503145c93061992646dcccebc5cb89a67fe138d496474e3ae1e6"
+  },
+  {
+    "file": "explorer-desktop-1440.jpg",
+    "width": 1440,
+    "height": 1000,
+    "sha256": "0323c1a8c745e8ba66927d307ba616c047046c1173c7c753f039737d4813b351"
+  },
+  {
+    "file": "explorer-final-desktop.jpg",
+    "width": 1440,
+    "height": 1000,
+    "sha256": "75f1d1676e7358cd84af23309057c1ef365d5852abbff5c4e7916b36526895f0"
+  },
+  {
+    "file": "import-persistence-after-refresh.jpg",
+    "width": 1440,
+    "height": 1000,
+    "sha256": "f2412e73772142e00e67116b587d37071bb2e0fcceed5ab61f29ffba86d83670"
+  },
+  {
+    "file": "loading-controlled-delay.jpg",
+    "width": 1440,
+    "height": 1000,
+    "sha256": "bfaaea35c070132bab24f8dc45c0f23a2c44b4fb396bcbf4d7c53c742d1f5e67"
+  },
+  {
+    "file": "mobile-390-viewport.jpg",
+    "width": 390,
+    "height": 1000,
+    "sha256": "9e263c1f8829c55a8e6eb1654b7b4f4f53f70a295d469318f930ea91f6a164c8"
+  },
+  {
+    "file": "mobile-390.jpg",
+    "width": 390,
+    "height": 1717,
+    "sha256": "bf8a70f7c437740070bd1891388d13cb68c270da7350ed56f7c588842641d5bc"
+  },
+  {
+    "file": "mobile-import-completed.jpg",
+    "width": 390,
+    "height": 1752,
+    "sha256": "e1f754b34f50673bd2591795fc4ffed9efa3a2d81ed01b4adde9bbaf5b7deb2a"
+  },
+  {
+    "file": "pagination-page-2.jpg",
+    "width": 1440,
+    "height": 2028,
+    "sha256": "caea5d464a1c452e0f83587536f705d2de02ac110863ac56a1c397796fd2e643"
+  },
+  {
+    "file": "refresh-capture.jpg",
+    "width": 1440,
+    "height": 1000,
+    "sha256": "17c8979380f6684110cc6e8717a6fa9ae989c982d3af6b20932f08a5ee49cf9e"
+  },
+  {
+    "file": "refreshing-controlled-delay.jpg",
+    "width": 1440,
+    "height": 1000,
+    "sha256": "86f3b7ac7360083e35f9a38a793789baec420a8d0592c9967bed684bb1a392aa"
+  },
+  {
+    "file": "remote-import.jpg",
+    "width": 1440,
+    "height": 1000,
+    "sha256": "934522d25cc46404c5da01fea292d03ba8e1c084e9f345831d0d92b14496c8db"
+  },
+  {
+    "file": "retry-recovered-live-data.jpg",
+    "width": 1440,
+    "height": 1000,
+    "sha256": "295c8c3e00ad04598df0b6e237d6aad15d256caf0e998bd1345c0f2723c0fda6"
+  },
+  {
+    "file": "search-filters.jpg",
+    "width": 1440,
+    "height": 1000,
+    "sha256": "d9c91fc7963dfa43c347ef395790068d55597dc4fa1c385af6316d57f90dd020"
+  },
+  {
+    "file": "tablet-768.jpg",
+    "width": 768,
+    "height": 1000,
+    "sha256": "6fb91e21d161e56cc19b6b7eb7fec9c1b8f39e6cb7585a64e9331ac041234f9f"
+  }
+]

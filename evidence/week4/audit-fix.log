@@ -1,0 +1,126 @@
+
+changed 1 package, and audited 891 packages in 2s
+
+174 packages are looking for funding
+  run `npm fund` for details
+
+# npm audit report
+
+braces  *
+Severity: high
+braces vulnerable to stack-exhaustion denial of service through deeply nested patterns - https://github.com/advisories/GHSA-vfj7-8cjw-p6xm
+fix available via `npm audit fix --force`
+Will install webpack-dev-server@6.1.0, which is a breaking change
+node_modules/braces
+  chokidar  2.0.0 - 3.6.0
+  Depends on vulnerable versions of braces
+  node_modules/chokidar
+    webpack-dev-server  >=1.15.0
+    Depends on vulnerable versions of chokidar
+    Depends on vulnerable versions of http-proxy-middleware
+    Depends on vulnerable versions of sockjs
+    node_modules/webpack-dev-server
+  micromatch  >=0.2.0
+  Depends on vulnerable versions of braces
+  node_modules/micromatch
+    http-proxy-middleware  >=0.3.0
+    Depends on vulnerable versions of micromatch
+    node_modules/http-proxy-middleware
+
+sprintf-js  *
+Severity: moderate
+sprintf-js vulnerable to denial of service through unbounded precision specifiers - https://github.com/advisories/GHSA-hp3w-g68c-fv3c
+fix available via `npm audit fix --force`
+Will install babel-jest@25.0.0, which is a breaking change
+node_modules/sprintf-js
+  argparse  1.0.0 - 1.0.10
+  Depends on vulnerable versions of sprintf-js
+  node_modules/argparse
+    js-yaml  3.2.7 - 3.15.2
+    Depends on vulnerable versions of argparse
+    node_modules/js-yaml
+      @istanbuljs/load-nyc-config  *
+      Depends on vulnerable versions of js-yaml
+      node_modules/@istanbuljs/load-nyc-config
+        babel-plugin-istanbul  >=6.0.0-beta.0
+        Depends on vulnerable versions of @istanbuljs/load-nyc-config
+        node_modules/babel-plugin-istanbul
+          @jest/transform  >=25.1.0
+          Depends on vulnerable versions of babel-plugin-istanbul
+          node_modules/@jest/transform
+            @jest/core  >=25.1.0
+            Depends on vulnerable versions of @jest/reporters
+            Depends on vulnerable versions of @jest/transform
+            Depends on vulnerable versions of jest-config
+            Depends on vulnerable versions of jest-resolve-dependencies
+            Depends on vulnerable versions of jest-runner
+            Depends on vulnerable versions of jest-runtime
+            Depends on vulnerable versions of jest-snapshot
+            node_modules/@jest/core
+              jest  >=25.1.0
+              Depends on vulnerable versions of @jest/core
+              Depends on vulnerable versions of jest-cli
+              node_modules/jest
+              jest-cli  >=25.1.0
+              Depends on vulnerable versions of @jest/core
+              Depends on vulnerable versions of jest-config
+              node_modules/jest-cli
+            @jest/reporters  >=25.1.0
+            Depends on vulnerable versions of @jest/transform
+            node_modules/@jest/reporters
+            babel-jest  >=25.1.0
+            Depends on vulnerable versions of @jest/transform
+            Depends on vulnerable versions of babel-plugin-istanbul
+            node_modules/babel-jest
+              jest-config  >=25.1.0
+              Depends on vulnerable versions of babel-jest
+              Depends on vulnerable versions of jest-circus
+              Depends on vulnerable versions of jest-runner
+              node_modules/jest-config
+            jest-runner  >=25.1.0
+            Depends on vulnerable versions of @jest/transform
+            Depends on vulnerable versions of jest-runtime
+            node_modules/jest-runner
+            jest-runtime  >=25.1.0
+            Depends on vulnerable versions of @jest/globals
+            Depends on vulnerable versions of @jest/transform
+            Depends on vulnerable versions of jest-snapshot
+            node_modules/jest-runtime
+              jest-circus  >=25.2.4
+              Depends on vulnerable versions of @jest/expect
+              Depends on vulnerable versions of jest-runtime
+              Depends on vulnerable versions of jest-snapshot
+              node_modules/jest-circus
+            jest-snapshot  >=27.0.0-next.0
+            Depends on vulnerable versions of @jest/transform
+            node_modules/jest-snapshot
+              @jest/expect  *
+              Depends on vulnerable versions of jest-snapshot
+              node_modules/@jest/expect
+                @jest/globals  >=28.0.0-alpha.0
+                Depends on vulnerable versions of @jest/expect
+                node_modules/@jest/globals
+              jest-resolve-dependencies  >=27.0.0-next.0
+              Depends on vulnerable versions of jest-snapshot
+              node_modules/jest-resolve-dependencies
+
+uuid  <11.1.1
+Severity: moderate
+uuid: Missing buffer bounds check in v3/v5/v6 when buf is provided - https://github.com/advisories/GHSA-w5hq-g745-h8pq
+fix available via `npm audit fix --force`
+Will install webpack-dev-server@6.1.0, which is a breaking change
+node_modules/uuid
+  sockjs  >=0.3.17
+  Depends on vulnerable versions of uuid
+  node_modules/sockjs
+
+26 vulnerabilities (21 moderate, 5 high)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+npm warn install-scripts 3 packages have install scripts not yet covered by allowScripts:
+npm warn install-scripts   @parcel/watcher@2.6.0 (install: node-gyp rebuild)
+npm warn install-scripts   fsevents@2.3.3 (install: (install scripts present))
+npm warn install-scripts   unrs-resolver@1.12.2 (postinstall: node postinstall.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.

@@ -1,0 +1,18 @@
+taskflow-reactjs-internship@0.4.0 /Users/aditimehra/Documents/New project/taskflow-reactjs-internship
+├─┬ babel-jest@30.5.2
+│ ├─┬ @jest/transform@30.5.2
+│ │ └── babel-plugin-istanbul@8.0.2 deduped
+│ └─┬ babel-plugin-istanbul@8.0.2
+│   └─┬ @istanbuljs/load-nyc-config@1.1.0
+│     └── js-yaml@3.15.2
+├─┬ sass@1.105.2
+│ └── chokidar@5.0.0
+└─┬ webpack-dev-server@5.2.7
+  ├─┬ chokidar@3.6.0
+  │ └── braces@3.0.3
+  ├─┬ http-proxy-middleware@2.0.10
+  │ └─┬ micromatch@4.0.8
+  │   └── braces@3.0.3 deduped
+  └─┬ sockjs@0.3.24
+    └── uuid@8.3.2
+

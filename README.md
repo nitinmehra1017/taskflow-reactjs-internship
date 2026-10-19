@@ -1,3 +1,9 @@
+## Week 4 update
+
+Open `/explore` for live JSONPlaceholder todos and users, combined title/status/user filters, eight-item pagination, refresh/retry and independent local task imports. Imports preserve completion, prevent duplicate source IDs and reuse Week 3 persistence. Read the [Week 4 guide](docs/Week4_API_Integration_and_Data_Handling.md) for architecture, real results and evidence conditions.
+
+Verification: 66 tests pass across four suites; lint, formatting and production build pass. Three bundle-size warnings remain. The compatible audit fix updated babel-plugin-istanbul; full audit remains 26 development advisories (21 moderate, five high), while production-only audit reports zero. No force fix or major dependency migration was applied.
+
 ## Week 3 update
 
 TaskFlow now supports task creation, editing, completion/reopening, confirmation-based deletion, combined search/status/priority filters and six live dashboard statistics. Validated localStorage persists tasks on this device. The Week 2 component showcase and prior documentation remain available.

@@ -1,0 +1,44 @@
+[
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Event",
+    "timestamp": "2026-10-19T16:51:29.524Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Event",
+    "timestamp": "2026-10-19T16:51:31.595Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Event",
+    "timestamp": "2026-10-19T16:51:35.669Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Event",
+    "timestamp": "2026-10-19T16:51:43.678Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Event",
+    "timestamp": "2026-10-19T16:51:59.720Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Event",
+    "timestamp": "2026-10-19T16:52:31.823Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Event",
+    "timestamp": "2026-10-19T16:53:35.900Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  }
+]

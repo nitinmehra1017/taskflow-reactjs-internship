@@ -1,0 +1,10 @@
+taskflow-reactjs-internship@0.2.0 /Users/aditimehra/Documents/New project/taskflow-reactjs-internship
+├─┬ sass@1.105.2
+│ └── chokidar@5.0.0
+└─┬ webpack-dev-server@5.2.7
+  ├─┬ chokidar@3.6.0
+  │ └── braces@3.0.3
+  └─┬ http-proxy-middleware@2.0.10
+    └─┬ micromatch@4.0.8
+      └── braces@3.0.3 deduped
+
