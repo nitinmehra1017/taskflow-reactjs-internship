@@ -7,18 +7,18 @@ expect.extend(toHaveNoViolations);
 test.each(['/', '/tasks', '/components', '/settings', '/missing'])(
   'axe checks route %s',
   async (path) => {
-    const { container } = renderApp(path);
+    const { container } = await renderApp(path);
     expect(await axe(container)).toHaveNoViolations();
   },
 );
 test('axe checks populated remote results', async () => {
   global.fetch = mockRemoteFetch();
-  const { container } = renderApp('/explore');
+  const { container } = await renderApp('/explore');
   await screen.findByRole('heading', { name: 'Remote review' });
   expect(await axe(container)).toHaveNoViolations();
 });
 test('axe checks create dialog and invalid submission with associated feedback', async () => {
-  const { user } = renderApp();
+  const { user } = await renderApp();
   await user.click(screen.getByRole('button', { name: 'New task' }));
   expect(await axe(document.body)).toHaveNoViolations();
   await user.click(screen.getByRole('button', { name: 'Save task' }));

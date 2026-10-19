@@ -10,6 +10,7 @@ module.exports = (_env, argv) => {
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'assets/[name].[contenthash:8].js',
+      chunkFilename: 'assets/[name].[contenthash:8].js',
       assetModuleFilename: 'assets/[name].[contenthash:8][ext]',
       publicPath: '/',
       clean: true,
@@ -47,7 +48,23 @@ module.exports = (_env, argv) => {
         : []),
     ],
     optimization: {
-      splitChunks: { chunks: 'all' },
+      splitChunks: {
+        chunks: 'all',
+        cacheGroups: {
+          reactDom: {
+            test: /[\\/]node_modules[\\/](react-dom|scheduler)[\\/]/,
+            name: 'react-dom',
+            priority: 20,
+            enforce: true,
+          },
+          router: {
+            test: /[\\/]node_modules[\\/]react-router(?:-dom)?[\\/]/,
+            name: 'router',
+            priority: 10,
+            enforce: true,
+          },
+        },
+      },
       runtimeChunk: 'single',
     },
     devServer: {

@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState } from 'react';
+import { useCallback, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import PageHeading from '../components/PageHeading';
 import { Alert, Badge, Button } from '../components/ui';
@@ -28,6 +28,7 @@ export default function ExplorePage() {
     () => new Map(data?.users.map((user) => [user.id, user]) || []),
     [data],
   );
+  const searchQuery = filters.search.trim().toLowerCase();
   const filtered = useMemo(
     () =>
       data?.todos.filter(
@@ -35,9 +36,9 @@ export default function ExplorePage() {
           (!filters.userId || todo.userId === Number(filters.userId)) &&
           (!filters.completion ||
             todo.completed === (filters.completion === 'completed')) &&
-          todo.title.toLowerCase().includes(filters.search.trim().toLowerCase()),
+          todo.title.toLowerCase().includes(searchQuery),
       ) || [],
-    [data, filters],
+    [data, filters.userId, filters.completion, searchQuery],
   );
   const pages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   const currentPage = Math.min(page, pages);
@@ -50,13 +51,16 @@ export default function ExplorePage() {
     setFilters(initialFilters);
     setPage(1);
   }
-  function importTask(todo) {
-    importRemoteTask(todo);
-    requestAnimationFrame(() => localLinkRef.current?.focus());
-    setMessage(
-      `Remote task ${todo.id} added as a local copy. Device saving is attempted automatically; check any storage warning below.`,
-    );
-  }
+  const importTask = useCallback(
+    (todo) => {
+      importRemoteTask(todo);
+      requestAnimationFrame(() => localLinkRef.current?.focus());
+      setMessage(
+        `Remote task ${todo.id} added as a local copy. Device saving is attempted automatically; check any storage warning below.`,
+      );
+    },
+    [importRemoteTask],
+  );
   return (
     <>
       <div className="heading-row">

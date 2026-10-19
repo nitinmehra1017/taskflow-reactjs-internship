@@ -12,6 +12,7 @@
   position: sticky;
   top: 0;
   height: 100vh;
+  overflow-y: auto;
 }
 .brand {
   display: flex;
@@ -164,11 +165,11 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  color: #718075;
+  color: #526457;
   font-size: 11px;
 }
 .breadcrumb span {
-  color: #a8b2a7;
+  color: #526457;
 }
 .breadcrumb strong {
   color: #354d41;
@@ -224,7 +225,7 @@ main:focus-visible {
   display: flex;
   gap: 12px;
   justify-content: space-between;
-  color: #6b796d;
+  color: #526457;
   font-size: 10px;
   padding: 28px 40px;
 }

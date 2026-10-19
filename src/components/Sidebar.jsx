@@ -52,7 +52,7 @@ export default function Sidebar() {
         </div>
         <div className="sidebar-footer">
           <span className="status-dot" />
-          Week 4 · Remote API<span>v0.4</span>
+          Week 6 · Final review<span>v0.6</span>
         </div>
       </div>
     </aside>

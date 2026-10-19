@@ -1,19 +1,23 @@
-import { render, screen, within } from '@testing-library/react';
+import { act, render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from 'react-router-dom';
 import App from '../src/App';
 
-function renderRoute(path = '/components') {
-  return render(
-    <MemoryRouter initialEntries={[path]}>
-      <App />
-    </MemoryRouter>,
-  );
+async function renderRoute(path = '/components') {
+  let view;
+  await act(async () => {
+    view = render(
+      <MemoryRouter initialEntries={[path]}>
+        <App />
+      </MemoryRouter>,
+    );
+  });
+  return view;
 }
 
 test('showcase validates input, changes select, dismisses/restores alert and confirms modal', async () => {
   const user = userEvent.setup();
-  renderRoute();
+  await renderRoute();
   await user.click(screen.getByRole('button', { name: 'Validate name' }));
   const input = screen.getByRole('textbox', { name: 'Workspace name' });
   expect(input).toHaveFocus();
@@ -51,7 +55,7 @@ test('showcase validates input, changes select, dismisses/restores alert and con
 
 test('loading demonstration resolves and enables its button again', async () => {
   const user = userEvent.setup();
-  renderRoute();
+  await renderRoute();
   await user.click(screen.getByRole('button', { name: 'Try loading state' }));
   expect(screen.getByRole('button', { name: 'Previewing…' })).toBeDisabled();
   expect(
@@ -69,14 +73,14 @@ test.each([
   ['/tasks', 'Your task space.'],
   ['/settings', 'A thoughtful setup.'],
   ['/missing', 'Let’s get back in flow.'],
-])('existing route %s renders its heading', (path, heading) => {
-  renderRoute(path);
+])('existing route %s renders its heading', async (path, heading) => {
+  await renderRoute(path);
   expect(screen.getByRole('heading', { level: 1, name: heading })).toBeInTheDocument();
 });
 
 test('navigation updates active links, title and main focus', async () => {
   const user = userEvent.setup();
-  renderRoute('/');
+  await renderRoute('/');
   await user.click(
     within(screen.getByRole('navigation', { name: 'Main navigation' })).getByRole(
       'link',

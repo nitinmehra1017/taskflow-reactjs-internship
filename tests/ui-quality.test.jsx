@@ -78,7 +78,7 @@ test('native Select is keyboard reachable and preserves external helper/error de
   expect(submit).toHaveBeenCalledTimes(1);
 });
 test('showcase actions communicate feedback and modal Cancel restores its opener', async () => {
-  const { user } = renderApp('/components');
+  const { user } = await renderApp('/components');
   for (const name of [
     'Primary',
     'Secondary',

@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom';
+import RouteContent from '../components/RouteContent';
 import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
 import useRouteFocus from '../hooks/useRouteFocus';
@@ -14,7 +14,7 @@ export default function AppLayout() {
       <div className="main-column">
         <Header />
         <main id="main-content" ref={mainRef} tabIndex={-1}>
-          <Outlet />
+          <RouteContent />
         </main>
         <footer className="page-footer">
           <span>TaskFlow · A calmer way to get things done.</span>

@@ -44,12 +44,16 @@ function success() {
     response(url.endsWith('/users') ? users : todos),
   );
 }
-function renderExplorer() {
-  return render(
-    <MemoryRouter initialEntries={['/explore']}>
-      <App />
-    </MemoryRouter>,
-  );
+async function renderExplorer() {
+  let view;
+  await act(async () => {
+    view = render(
+      <MemoryRouter initialEntries={['/explore']}>
+        <App />
+      </MemoryRouter>,
+    );
+  });
+  return view;
 }
 beforeEach(() => {
   localStorage.clear();
@@ -192,8 +196,14 @@ test('timeout is reported as a retryable error rather than silent cancellation',
 });
 test('explorer searches, combines filters, resets pagination and reports empty results', async () => {
   const user = userEvent.setup();
-  renderExplorer();
+  const loading = deferred();
+  fetch.mockImplementation(async (url) => {
+    await loading.promise;
+    return response(url.endsWith('/users') ? users : todos);
+  });
+  await renderExplorer();
   expect(screen.getByText('Loading remote tasks and users…')).toBeInTheDocument();
+  await act(async () => loading.resolve());
   await screen.findByRole('heading', { name: 'Remote idea 1', exact: true });
   expect(
     within(screen.getByRole('list', { name: 'Remote tasks' })).getAllByRole('listitem'),
@@ -222,7 +232,7 @@ test('explorer searches, combines filters, resets pagination and reports empty r
 test('error UI supports retry to actual loaded state and refresh keeps records visible', async () => {
   fetch.mockResolvedValue({ ok: false, status: 500 });
   const user = userEvent.setup();
-  renderExplorer();
+  await renderExplorer();
   expect(await screen.findByText('Remote server error')).toBeInTheDocument();
   success();
   await user.click(screen.getByRole('button', { name: 'Retry request' }));
@@ -239,7 +249,7 @@ test('error UI supports retry to actual loaded state and refresh keeps records v
 });
 test('import becomes one persistent local copy and drives dashboard statistics', async () => {
   const user = userEvent.setup();
-  const view = renderExplorer();
+  const view = await renderExplorer();
   const button = await screen.findByRole('button', {
     name: 'Import remote task 1',
     exact: true,
@@ -271,19 +281,19 @@ test('import becomes one persistent local copy and drives dashboard statistics',
     '1',
   );
   view.unmount();
-  renderExplorer();
+  await renderExplorer();
   expect(
     await screen.findByRole('button', { name: 'Imported remote task 1', exact: true }),
   ).toBeDisabled();
   await user.click(screen.getByRole('link', { name: 'Tasks', exact: true }));
-  expect(screen.getByText('Imported local copy')).toBeInTheDocument();
+  expect(await screen.findByText('Imported local copy')).toBeInTheDocument();
 });
 test('storage failure never claims imported copy is persisted', async () => {
   const set = jest.spyOn(Storage.prototype, 'setItem').mockImplementation(() => {
     throw new Error('Quota');
   });
   const user = userEvent.setup();
-  renderExplorer();
+  await renderExplorer();
   await user.click(
     await screen.findByRole('button', { name: 'Import remote task 1', exact: true }),
   );

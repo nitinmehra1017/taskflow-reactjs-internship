@@ -1,6 +1,6 @@
 {
   "name": "taskflow-reactjs-internship",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "private": true,
   "description": "TaskFlow ReactJS internship task manager and remote API explorer",
   "engines": {
@@ -16,7 +16,8 @@
     "test": "jest --runInBand",
     "test:watch": "jest --watch",
     "test:ci": "jest --runInBand --ci --coverage",
-    "test:a11y": "jest --runInBand tests/accessibility.test.jsx"
+    "test:a11y": "jest --runInBand tests/accessibility.test.jsx",
+    "preview": "node scripts/serve-production.cjs"
   },
   "dependencies": {
     "react": "^19.2.0",

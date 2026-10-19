@@ -9,7 +9,7 @@ afterEach(() => {
 });
 test('QA-001 completing a task hidden by the current filter moves focus to task results', async () => {
   writeTasks([makeTask()]);
-  const { user } = renderApp();
+  const { user } = await renderApp();
   await user.selectOptions(screen.getByLabelText('Filter by status'), 'pending');
   await user.click(screen.getByRole('button', { name: 'Complete Prepare review' }));
   expect(
@@ -21,7 +21,7 @@ test('QA-001 completing a task hidden by the current filter moves focus to task 
 });
 test('QA-001 editing a task out of the active filter restores focus to task results', async () => {
   writeTasks([makeTask()]);
-  const { user } = renderApp();
+  const { user } = await renderApp();
   await user.selectOptions(screen.getByLabelText('Filter by priority'), 'medium');
   await user.click(screen.getByRole('button', { name: 'Edit Prepare review' }));
   await user.selectOptions(screen.getByLabelText('Priority', { exact: true }), 'high');
@@ -33,7 +33,7 @@ test('QA-001 editing a task out of the active filter restores focus to task resu
 });
 test('QA-002 retrying a remote failure retains keyboard focus in request feedback', async () => {
   global.fetch = jest.fn().mockRejectedValue(new TypeError('offline'));
-  const { user } = renderApp('/explore');
+  const { user } = await renderApp('/explore');
   await screen.findByText('Connection problem');
   global.fetch = mockRemoteFetch();
   await user.click(screen.getByRole('button', { name: 'Retry request' }));

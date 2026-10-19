@@ -1,12 +1,19 @@
-import ExplorePage from './pages/ExplorePage';
+import { lazy } from 'react';
+const ExplorePage = lazy(
+  () => import(/* webpackChunkName: 'explore' */ './pages/ExplorePage'),
+);
 import { TaskProvider } from './context/TaskContext';
 import { Route, Routes } from 'react-router-dom';
 import AppLayout from './layouts/AppLayout';
 import DashboardPage from './pages/DashboardPage';
-import TasksPage from './pages/TasksPage';
-import SettingsPage from './pages/SettingsPage';
+const TasksPage = lazy(() => import(/* webpackChunkName: 'tasks' */ './pages/TasksPage'));
+const SettingsPage = lazy(
+  () => import(/* webpackChunkName: 'settings' */ './pages/SettingsPage'),
+);
 import NotFoundPage from './pages/NotFoundPage';
-import ComponentsPage from './pages/ComponentsPage';
+const ComponentsPage = lazy(
+  () => import(/* webpackChunkName: 'components' */ './pages/ComponentsPage'),
+);
 
 export default function App() {
   return (

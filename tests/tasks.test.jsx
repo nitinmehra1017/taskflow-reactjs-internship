@@ -31,12 +31,16 @@ const task = {
   updatedAt: '2026-10-19T10:00:00.000Z',
 };
 beforeEach(() => localStorage.clear());
-function app() {
-  return render(
-    <MemoryRouter initialEntries={['/tasks']}>
-      <App />
-    </MemoryRouter>,
-  );
+async function app() {
+  let view;
+  await act(async () => {
+    view = render(
+      <MemoryRouter initialEntries={['/tasks']}>
+        <App />
+      </MemoryRouter>,
+    );
+  });
+  return view;
 }
 const wrapper = ({ children }) => (
   <StrictMode>
@@ -45,7 +49,7 @@ const wrapper = ({ children }) => (
 );
 test('complete task lifecycle, validation, accessible dialogs and shared dashboard statistics', async () => {
   const user = userEvent.setup();
-  app();
+  await app();
   await user.click(screen.getByRole('button', { name: 'New task' }));
   await user.click(screen.getByRole('button', { name: 'Save task' }));
   expect(screen.getByLabelText(/Task title/)).toHaveFocus();
@@ -102,7 +106,7 @@ test('UI filters combine status, priority and description search and reset', asy
     },
   ]);
   const user = userEvent.setup();
-  app();
+  await app();
   await user.type(screen.getByLabelText('Search tasks'), 'brief');
   expect(screen.queryByRole('heading', { name: 'Design' })).not.toBeInTheDocument();
   await user.selectOptions(screen.getByLabelText('Filter by status'), 'completed');

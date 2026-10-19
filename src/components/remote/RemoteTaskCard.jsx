@@ -1,5 +1,6 @@
+import { memo } from 'react';
 import { Card, Badge, Button } from '../ui';
-export default function RemoteTaskCard({ todo, user, imported, onImport }) {
+function RemoteTaskCard({ todo, user, imported, onImport }) {
   return (
     <li>
       <Card
@@ -17,7 +18,7 @@ export default function RemoteTaskCard({ todo, user, imported, onImport }) {
                 : `Import remote task ${todo.id}`
             }
           >
-            {imported ? 'Imported' : 'Import local copy'}
+            {imported ? 'Imported' : `Import remote task ${todo.id}`}
           </Button>
         }
       >
@@ -35,3 +36,5 @@ export default function RemoteTaskCard({ todo, user, imported, onImport }) {
     </li>
   );
 }
+
+export default memo(RemoteTaskCard);

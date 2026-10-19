@@ -29,7 +29,7 @@ export default [
       eqeqeq: ['error', 'always'],
     },
   },
-  { files: ['*.cjs'], languageOptions: { globals: globals.node } },
+  { files: ['**/*.cjs'], languageOptions: { globals: globals.node } },
   {
     files: ['tests/**/*.{js,jsx,cjs}'],
     languageOptions: { globals: { ...globals.jest, ...globals.node } },

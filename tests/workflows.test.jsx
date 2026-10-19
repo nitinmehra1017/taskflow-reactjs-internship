@@ -11,7 +11,7 @@ async function createTask(user, title, { status = 'pending', priority = 'medium'
   expect(screen.getByRole('heading', { name: title })).toBeInTheDocument();
 }
 test('Workflow A and C: a created task updates dashboard and survives full application remount', async () => {
-  const view = renderApp();
+  const view = await renderApp();
   await createTask(view.user, 'Publish QA findings', { priority: 'high' });
   expect(readTasks().tasks[0]).toMatchObject({
     title: 'Publish QA findings',
@@ -26,13 +26,13 @@ test('Workflow A and C: a created task updates dashboard and survives full appli
     within(stats).getByText('High-priority tasks').closest('article'),
   ).toHaveTextContent('1');
   view.unmount();
-  renderApp();
+  await renderApp();
   expect(
     screen.getByRole('heading', { name: 'Publish QA findings' }),
   ).toBeInTheDocument();
 });
 test('Workflow D: multiple created tasks combine title search, status and priority then clear', async () => {
-  const { user } = renderApp();
+  const { user } = await renderApp();
   await createTask(user, 'Write QA report', { priority: 'high' });
   await createTask(user, 'Review QA report', { status: 'completed', priority: 'high' });
   await createTask(user, 'Plan next week', { priority: 'low' });
@@ -50,7 +50,7 @@ test('Workflow D: multiple created tasks combine title search, status and priori
 });
 test('Workflow E: filter remote records, import, navigate locally, remount and block duplicates', async () => {
   global.fetch = mockRemoteFetch();
-  const view = renderApp('/explore');
+  const view = await renderApp('/explore');
   await screen.findByRole('heading', { name: 'Remote review' });
   await view.user.type(screen.getByLabelText('Search remote tasks'), 'review');
   await view.user.selectOptions(screen.getByLabelText('Remote user'), '1');
@@ -63,7 +63,7 @@ test('Workflow E: filter remote records, import, navigate locally, remount and b
   await view.user.keyboard('{Enter}');
   expect(screen.getByRole('heading', { name: 'Remote review' })).toBeInTheDocument();
   view.unmount();
-  renderApp('/explore');
+  await renderApp('/explore');
   expect(
     await screen.findByRole('button', { name: 'Imported remote task 1', exact: true }),
   ).toBeDisabled();

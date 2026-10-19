@@ -102,7 +102,7 @@ h3 {
   font-size: 10px;
   letter-spacing: 1.65px;
   font-weight: 750;
-  color: #657b6b;
+  color: #4d654e;
   margin-bottom: 13px;
 }
 .page-heading {
@@ -186,5 +186,54 @@ code {
   *::after {
     transition: none !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* Reserve route loading space without hiding navigation or animating content. */
+.route-pending {
+  min-height: 65vh;
+  display: grid;
+  align-content: start;
+  gap: 20px;
+}
+.route-pending h1 {
+  font-size: clamp(28px, 2.6vw, 38px);
+  line-height: 1.2;
+}
+.route-pending p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+.route-pending .button {
+  justify-self: start;
+}
+.route-placeholder {
+  min-height: 250px;
+  border-radius: 14px;
+  background: #edf0e8;
+}
+.sidebar a:focus-visible {
+  outline-color: var(--lime);
+  outline-offset: 3px;
+}
+/* Long user text and narrow navigation must reflow, rather than clip. */
+.page-heading,
+.breadcrumb {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 400px) {
+  .topbar {
+    gap: 12px;
+    padding-inline: 20px;
+  }
+  .header-actions {
+    gap: 8px;
+  }
+  .header-divider {
+    display: none;
+  }
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
