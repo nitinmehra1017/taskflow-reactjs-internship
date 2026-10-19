@@ -1,0 +1,17 @@
+node_modules/
+dist/
+build/
+coverage/
+.cache/
+.DS_Store
+*.log
+!evidence/*.log
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+docs/.rendered/
+__pycache__/
