@@ -1,0 +1,464 @@
+{
+  "baseline": {
+    "lighthouse": [
+      {
+        "route": "dashboard",
+        "mode": "mobile",
+        "performance": 100,
+        "accessibility": 95,
+        "fcpMs": 755.8127,
+        "lcpMs": 1801.8728999999998,
+        "tbtMs": 0,
+        "cls": 0,
+        "speedIndexMs": 1088.1423080240063,
+        "transferredBytes": 105878,
+        "requests": 7,
+        "failedAccessibilityAudits": [
+          "color-contrast"
+        ]
+      },
+      {
+        "route": "tasks",
+        "mode": "mobile",
+        "performance": 100,
+        "accessibility": 96,
+        "fcpMs": 752.3416,
+        "lcpMs": 1803.5124,
+        "tbtMs": 0,
+        "cls": 0,
+        "speedIndexMs": 752.3416,
+        "transferredBytes": 105878,
+        "requests": 7,
+        "failedAccessibilityAudits": [
+          "color-contrast"
+        ]
+      },
+      {
+        "route": "components",
+        "mode": "mobile",
+        "performance": 100,
+        "accessibility": 96,
+        "fcpMs": 751.4456,
+        "lcpMs": 1801.692,
+        "tbtMs": 0,
+        "cls": 0,
+        "speedIndexMs": 751.4456,
+        "transferredBytes": 105878,
+        "requests": 7,
+        "failedAccessibilityAudits": [
+          "color-contrast"
+        ]
+      },
+      {
+        "route": "explore",
+        "mode": "mobile",
+        "performance": 99,
+        "accessibility": 97,
+        "fcpMs": 1508.1525,
+        "lcpMs": 1801.72875,
+        "tbtMs": 0,
+        "cls": 0.01604692226836116,
+        "speedIndexMs": 1508.1525,
+        "transferredBytes": 113001,
+        "requests": 9,
+        "failedAccessibilityAudits": [
+          "color-contrast",
+          "label-content-name-mismatch"
+        ]
+      },
+      {
+        "route": "dashboard",
+        "mode": "desktop",
+        "performance": 100,
+        "accessibility": 95,
+        "fcpMs": 323.2376,
+        "lcpMs": 401.9251,
+        "tbtMs": 0,
+        "cls": 0,
+        "speedIndexMs": 323.2376,
+        "transferredBytes": 105878,
+        "requests": 7,
+        "failedAccessibilityAudits": [
+          "color-contrast"
+        ]
+      },
+      {
+        "route": "tasks",
+        "mode": "desktop",
+        "performance": 100,
+        "accessibility": 96,
+        "fcpMs": 323.6098,
+        "lcpMs": 402.41470000000004,
+        "tbtMs": 0,
+        "cls": 0,
+        "speedIndexMs": 323.6098,
+        "transferredBytes": 105878,
+        "requests": 7,
+        "failedAccessibilityAudits": [
+          "color-contrast"
+        ]
+      },
+      {
+        "route": "components",
+        "mode": "desktop",
+        "performance": 100,
+        "accessibility": 96,
+        "fcpMs": 201.6732,
+        "lcpMs": 402.29380000000003,
+        "tbtMs": 0,
+        "cls": 0,
+        "speedIndexMs": 201.6732,
+        "transferredBytes": 105878,
+        "requests": 7,
+        "failedAccessibilityAudits": [
+          "color-contrast"
+        ]
+      },
+      {
+        "route": "explore",
+        "mode": "desktop",
+        "performance": 100,
+        "accessibility": 97,
+        "fcpMs": 201.8483,
+        "lcpMs": 402.56185,
+        "tbtMs": 0,
+        "cls": 0.0002654862752823746,
+        "speedIndexMs": 201.8483,
+        "transferredBytes": 112996,
+        "requests": 9,
+        "failedAccessibilityAudits": [
+          "color-contrast",
+          "label-content-name-mismatch"
+        ]
+      }
+    ],
+    "bundle": {
+      "assets": [
+        {
+          "name": "assets/8.d6b5e5a9.js",
+          "bytes": 256412,
+          "initial": true
+        },
+        {
+          "name": "assets/main.b5616bf0.js",
+          "bytes": 48321,
+          "initial": true
+        },
+        {
+          "name": "assets/main.eab6c71b.css",
+          "bytes": 32041,
+          "initial": true
+        },
+        {
+          "name": "assets/runtime.69b6354b.js",
+          "bytes": 1701,
+          "initial": true
+        },
+        {
+          "name": "index.html",
+          "bytes": 700,
+          "initial": false
+        },
+        {
+          "name": "assets/taskflow-mark.4c0b9d52.svg",
+          "bytes": 264,
+          "initial": false
+        },
+        {
+          "name": "taskflow-mark.svg",
+          "bytes": 264,
+          "initial": false
+        }
+      ],
+      "initialJsBytes": 306434,
+      "initialCssBytes": 32041,
+      "totalJsBytes": 306434,
+      "warnings": 3
+    }
+  },
+  "optimized": {
+    "lighthouse": [
+      {
+        "route": "dashboard",
+        "mode": "mobile",
+        "performance": 99,
+        "accessibility": 100,
+        "fcpMs": 1360.4337,
+        "lcpMs": 1807.5585,
+        "tbtMs": 0,
+        "cls": 0,
+        "speedIndexMs": 1360.4337,
+        "transferredBytes": 98081,
+        "requests": 8,
+        "failedAccessibilityAudits": []
+      },
+      {
+        "route": "tasks",
+        "mode": "mobile",
+        "performance": 99,
+        "accessibility": 100,
+        "fcpMs": 1202.1088750000001,
+        "lcpMs": 1802.30655,
+        "tbtMs": 0,
+        "cls": 0,
+        "speedIndexMs": 1202.1088750000001,
+        "transferredBytes": 104757,
+        "requests": 10,
+        "failedAccessibilityAudits": []
+      },
+      {
+        "route": "components",
+        "mode": "mobile",
+        "performance": 99,
+        "accessibility": 100,
+        "fcpMs": 1504.5297500000001,
+        "lcpMs": 1802.2018500000001,
+        "tbtMs": 0,
+        "cls": 0,
+        "speedIndexMs": 1504.5297500000001,
+        "transferredBytes": 106058,
+        "requests": 10,
+        "failedAccessibilityAudits": []
+      },
+      {
+        "route": "explore",
+        "mode": "mobile",
+        "performance": 99,
+        "accessibility": 100,
+        "fcpMs": 1505.1128749999998,
+        "lcpMs": 1802.7294000000002,
+        "tbtMs": 0,
+        "cls": 0.01604692226836116,
+        "speedIndexMs": 1505.1128749999998,
+        "transferredBytes": 112868,
+        "requests": 12,
+        "failedAccessibilityAudits": []
+      },
+      {
+        "route": "dashboard",
+        "mode": "desktop",
+        "performance": 100,
+        "accessibility": 100,
+        "fcpMs": 327.3112,
+        "lcpMs": 447.9668,
+        "tbtMs": 0,
+        "cls": 0,
+        "speedIndexMs": 327.3112,
+        "transferredBytes": 98081,
+        "requests": 8,
+        "failedAccessibilityAudits": []
+      },
+      {
+        "route": "tasks",
+        "mode": "desktop",
+        "performance": 100,
+        "accessibility": 100,
+        "fcpMs": 302.0335,
+        "lcpMs": 442.26965,
+        "tbtMs": 0,
+        "cls": 0.010704500043779,
+        "speedIndexMs": 302.0335,
+        "transferredBytes": 104757,
+        "requests": 10,
+        "failedAccessibilityAudits": []
+      },
+      {
+        "route": "components",
+        "mode": "desktop",
+        "performance": 100,
+        "accessibility": 100,
+        "fcpMs": 302.363,
+        "lcpMs": 442.6616,
+        "tbtMs": 0,
+        "cls": 0.05990858944050433,
+        "speedIndexMs": 307.67775415054484,
+        "transferredBytes": 106058,
+        "requests": 10,
+        "failedAccessibilityAudits": []
+      },
+      {
+        "route": "explore",
+        "mode": "desktop",
+        "performance": 100,
+        "accessibility": 100,
+        "fcpMs": 301.837125,
+        "lcpMs": 442.20455,
+        "tbtMs": 0,
+        "cls": 0.010320283213670723,
+        "speedIndexMs": 301.837125,
+        "transferredBytes": 112867,
+        "requests": 12,
+        "failedAccessibilityAudits": []
+      }
+    ],
+    "bundle": {
+      "assets": [
+        {
+          "name": "assets/react-dom.03b718ad.js",
+          "bytes": 210743,
+          "initial": true
+        },
+        {
+          "name": "assets/router.04501867.js",
+          "bytes": 37776,
+          "initial": true
+        },
+        {
+          "name": "assets/main.f5b71115.js",
+          "bytes": 26218,
+          "initial": true
+        },
+        {
+          "name": "assets/main.670dfef2.css",
+          "bytes": 20576,
+          "initial": true
+        },
+        {
+          "name": "assets/components.367ab6c3.js",
+          "bytes": 16696,
+          "initial": false
+        },
+        {
+          "name": "assets/explore.d9f31091.js",
+          "bytes": 13793,
+          "initial": false
+        },
+        {
+          "name": "assets/tasks.c597d784.js",
+          "bytes": 12462,
+          "initial": false
+        },
+        {
+          "name": "assets/components.d98dedd9.css",
+          "bytes": 9330,
+          "initial": false
+        },
+        {
+          "name": "assets/explore.4ddad4a4.css",
+          "bytes": 9165,
+          "initial": false
+        },
+        {
+          "name": "assets/tasks.a3aee680.css",
+          "bytes": 7177,
+          "initial": false
+        },
+        {
+          "name": "assets/runtime.5ff2d06a.js",
+          "bytes": 4700,
+          "initial": true
+        },
+        {
+          "name": "assets/settings.063ab133.js",
+          "bytes": 2802,
+          "initial": false
+        },
+        {
+          "name": "index.html",
+          "bytes": 791,
+          "initial": false
+        },
+        {
+          "name": "assets/taskflow-mark.4c0b9d52.svg",
+          "bytes": 264,
+          "initial": false
+        },
+        {
+          "name": "taskflow-mark.svg",
+          "bytes": 264,
+          "initial": false
+        }
+      ],
+      "initialJsBytes": 279437,
+      "initialCssBytes": 20576,
+      "totalJsBytes": 325190,
+      "warnings": 1
+    }
+  },
+  "changes": {
+    "initialJsPercent": -8.81,
+    "initialCssPercent": -35.78,
+    "lighthouse": [
+      {
+        "route": "dashboard",
+        "mode": "mobile",
+        "fcpPercent": 80,
+        "lcpPercent": 0.32,
+        "tbtPercent": null,
+        "clsPercent": null,
+        "speedIndexPercent": 25.02,
+        "transferredPercent": -7.36
+      },
+      {
+        "route": "tasks",
+        "mode": "mobile",
+        "fcpPercent": 59.78,
+        "lcpPercent": -0.07,
+        "tbtPercent": null,
+        "clsPercent": null,
+        "speedIndexPercent": 59.78,
+        "transferredPercent": -1.06
+      },
+      {
+        "route": "components",
+        "mode": "mobile",
+        "fcpPercent": 100.22,
+        "lcpPercent": 0.03,
+        "tbtPercent": null,
+        "clsPercent": null,
+        "speedIndexPercent": 100.22,
+        "transferredPercent": 0.17
+      },
+      {
+        "route": "explore",
+        "mode": "mobile",
+        "fcpPercent": -0.2,
+        "lcpPercent": 0.06,
+        "tbtPercent": null,
+        "clsPercent": 0,
+        "speedIndexPercent": -0.2,
+        "transferredPercent": -0.12
+      },
+      {
+        "route": "dashboard",
+        "mode": "desktop",
+        "fcpPercent": 1.26,
+        "lcpPercent": 11.46,
+        "tbtPercent": null,
+        "clsPercent": null,
+        "speedIndexPercent": 1.26,
+        "transferredPercent": -7.36
+      },
+      {
+        "route": "tasks",
+        "mode": "desktop",
+        "fcpPercent": -6.67,
+        "lcpPercent": 9.9,
+        "tbtPercent": null,
+        "clsPercent": null,
+        "speedIndexPercent": -6.67,
+        "transferredPercent": -1.06
+      },
+      {
+        "route": "components",
+        "mode": "desktop",
+        "fcpPercent": 49.93,
+        "lcpPercent": 10.03,
+        "tbtPercent": null,
+        "clsPercent": null,
+        "speedIndexPercent": 52.56,
+        "transferredPercent": 0.17
+      },
+      {
+        "route": "explore",
+        "mode": "desktop",
+        "fcpPercent": 49.54,
+        "lcpPercent": 9.85,
+        "tbtPercent": null,
+        "clsPercent": 3787.31,
+        "speedIndexPercent": 49.54,
+        "transferredPercent": -0.11
+      }
+    ]
+  }
+}

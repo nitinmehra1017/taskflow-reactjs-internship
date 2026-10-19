@@ -1,0 +1,212 @@
+[
+  {
+    "route": "Overview",
+    "heading": "Make room for good work.",
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "route": "Tasks",
+    "heading": "Your task space.",
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "route": "Components",
+    "heading": "Small pieces. Better together.",
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "route": "Explore",
+    "heading": "Explore possibilities.",
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "route": "Settings",
+    "heading": "A thoughtful setup.",
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "route": "Overview",
+    "heading": "Make room for good work.",
+    "scrollWidth": 375,
+    "width": 375
+  },
+  {
+    "route": "Tasks",
+    "heading": "Your task space.",
+    "scrollWidth": 375,
+    "width": 375
+  },
+  {
+    "route": "Components",
+    "heading": "Small pieces. Better together.",
+    "scrollWidth": 375,
+    "width": 375
+  },
+  {
+    "route": "Explore",
+    "heading": "Explore possibilities.",
+    "scrollWidth": 375,
+    "width": 375
+  },
+  {
+    "route": "Settings",
+    "heading": "A thoughtful setup.",
+    "scrollWidth": 375,
+    "width": 375
+  },
+  {
+    "route": "Overview",
+    "heading": "Make room for good work.",
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "route": "Tasks",
+    "heading": "Your task space.",
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "route": "Components",
+    "heading": "Small pieces. Better together.",
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "route": "Explore",
+    "heading": "Explore possibilities.",
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "route": "Settings",
+    "heading": "A thoughtful setup.",
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "route": "Overview",
+    "heading": "Make room for good work.",
+    "scrollWidth": 768,
+    "width": 768
+  },
+  {
+    "route": "Tasks",
+    "heading": "Your task space.",
+    "scrollWidth": 768,
+    "width": 768
+  },
+  {
+    "route": "Components",
+    "heading": "Small pieces. Better together.",
+    "scrollWidth": 768,
+    "width": 768
+  },
+  {
+    "route": "Explore",
+    "heading": "Explore possibilities.",
+    "scrollWidth": 768,
+    "width": 768
+  },
+  {
+    "route": "Settings",
+    "heading": "A thoughtful setup.",
+    "scrollWidth": 768,
+    "width": 768
+  },
+  {
+    "route": "Overview",
+    "heading": "Make room for good work.",
+    "scrollWidth": 1024,
+    "width": 1024
+  },
+  {
+    "route": "Tasks",
+    "heading": "Your task space.",
+    "scrollWidth": 1024,
+    "width": 1024
+  },
+  {
+    "route": "Components",
+    "heading": "Small pieces. Better together.",
+    "scrollWidth": 1024,
+    "width": 1024
+  },
+  {
+    "route": "Explore",
+    "heading": "Explore possibilities.",
+    "scrollWidth": 1024,
+    "width": 1024
+  },
+  {
+    "route": "Settings",
+    "heading": "A thoughtful setup.",
+    "scrollWidth": 1024,
+    "width": 1024
+  },
+  {
+    "route": "Overview",
+    "heading": "Make room for good work.",
+    "scrollWidth": 1440,
+    "width": 1440
+  },
+  {
+    "route": "Tasks",
+    "heading": "Your task space.",
+    "scrollWidth": 1440,
+    "width": 1440
+  },
+  {
+    "route": "Components",
+    "heading": "Small pieces. Better together.",
+    "scrollWidth": 1440,
+    "width": 1440
+  },
+  {
+    "route": "Explore",
+    "heading": "Explore possibilities.",
+    "scrollWidth": 1440,
+    "width": 1440
+  },
+  {
+    "route": "Settings",
+    "heading": "A thoughtful setup.",
+    "scrollWidth": 1440,
+    "width": 1440
+  },
+  {
+    "route": "Overview",
+    "heading": "Make room for good work.",
+    "scrollWidth": 1920,
+    "width": 1920
+  },
+  {
+    "route": "Tasks",
+    "heading": "Your task space.",
+    "scrollWidth": 1920,
+    "width": 1920
+  },
+  {
+    "route": "Components",
+    "heading": "Small pieces. Better together.",
+    "scrollWidth": 1920,
+    "width": 1920
+  },
+  {
+    "route": "Explore",
+    "heading": "Explore possibilities.",
+    "scrollWidth": 1920,
+    "width": 1920
+  },
+  {
+    "route": "Settings",
+    "heading": "A thoughtful setup.",
+    "scrollWidth": 1920,
+    "width": 1920
+  }
+]

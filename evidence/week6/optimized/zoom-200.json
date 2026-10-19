@@ -1,0 +1,35 @@
+{
+  "zoom": "200%, confirmed in native Chrome accessibility tree",
+  "routes": [
+    {
+      "route": "Overview",
+      "devicePixelRatio": 4,
+      "scrollWidth": 735,
+      "width": 735
+    },
+    {
+      "route": "Tasks",
+      "devicePixelRatio": 4,
+      "scrollWidth": 735,
+      "width": 735
+    },
+    {
+      "route": "Components",
+      "devicePixelRatio": 4,
+      "scrollWidth": 735,
+      "width": 735
+    },
+    {
+      "route": "Explore",
+      "devicePixelRatio": 4,
+      "scrollWidth": 735,
+      "width": 735
+    },
+    {
+      "route": "Settings",
+      "devicePixelRatio": 4,
+      "scrollWidth": 735,
+      "width": 735
+    }
+  ]
+}

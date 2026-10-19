@@ -1,0 +1,5 @@
+Baseline source: Week 5 commit 7af5394961c7cec85fdb1df4d01ec2423dd0e694.
+Production output built with npm run build and webpack JSON statistics before performance source changes.
+Same loopback production preview on 127.0.0.1:4173 for both phases; gzip negotiation and content-hash caching; no-cache HTML.
+Lighthouse 13.5.0 CLI, bundled installed Chrome 155, headless, performance and accessibility categories. Three separate audits per route and preset; report medians. Default mobile simulated throttling and desktop preset retained unchanged; Lighthouse resets storage/cache by default. Each individual JSON records configSettings, environment and timing. Measurements use empty local task storage. Explore calls the live public API, so network availability and response timing are uncontrolled; report that limitation. CLI sessions run serially, not in parallel. No score suppression or feature removal.
+React Profiler is separate Jest development/jsdom instrumentation with eight fixture records and one import; report commit counts, not production CPU speedup. Do not compare its timing to Lighthouse.

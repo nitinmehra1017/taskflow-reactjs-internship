@@ -1,0 +1,66 @@
+[
+  {
+    "element": "Breadcrumb",
+    "before": "#718075",
+    "after": "#526457",
+    "background": "#fbfcf9",
+    "beforeRatio": 4.04,
+    "afterRatio": 6.14
+  },
+  {
+    "element": "Eyebrow on paper",
+    "before": "#657b6b",
+    "after": "#4d654e",
+    "background": "#f7f8f5",
+    "beforeRatio": 4.28,
+    "afterRatio": 5.99
+  },
+  {
+    "element": "Eyebrow on intro",
+    "before": "#657b6b",
+    "after": "#4d654e",
+    "background": "#e9efdc",
+    "beforeRatio": 3.88,
+    "afterRatio": 5.43
+  },
+  {
+    "element": "Footer",
+    "before": "#6b796d",
+    "after": "#526457",
+    "background": "#f7f8f5",
+    "beforeRatio": 4.3,
+    "afterRatio": 5.94
+  },
+  {
+    "element": "Welcome copy",
+    "before": "#637359",
+    "after": "#4d6244",
+    "background": "#e9efdc",
+    "beforeRatio": 4.32,
+    "afterRatio": 5.67
+  },
+  {
+    "element": "Roadmap labels",
+    "before": "#66755f",
+    "after": "#4d6244",
+    "background": "#f0f3eb",
+    "beforeRatio": 4.38,
+    "afterRatio": 5.95
+  },
+  {
+    "element": "Roadmap current step",
+    "before": "#5f7650",
+    "after": "#4d6244",
+    "background": "#f0f3eb",
+    "beforeRatio": 4.46,
+    "afterRatio": 5.95
+  },
+  {
+    "element": "Sidebar focus outline",
+    "before": "#387e65",
+    "after": "#d3ee92",
+    "background": "#163f38",
+    "beforeRatio": 2.41,
+    "afterRatio": 9.11
+  }
+]

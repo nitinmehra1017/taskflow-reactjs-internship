@@ -1,0 +1,79 @@
+
+> taskflow-reactjs-internship@0.6.0 test
+> jest --runInBand --watch=false --coverage --json --outputFile=evidence/week6/jest-results.json
+
+--------------------------|---------|----------|---------|---------|-------------------
+File                      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+--------------------------|---------|----------|---------|---------|-------------------
+All files                 |   97.86 |    96.27 |   98.46 |   98.68 |                   
+ src                      |     100 |      100 |     100 |     100 |                   
+  App.jsx                 |     100 |      100 |     100 |     100 |                   
+  index.jsx               |     100 |      100 |     100 |     100 |                   
+ src/components           |     100 |     90.9 |     100 |     100 |                   
+  Header.jsx              |     100 |      100 |     100 |     100 |                   
+  Icon.jsx                |     100 |    66.66 |     100 |     100 | 29                
+  PageHeading.jsx         |     100 |      100 |     100 |     100 |                   
+  RouteContent.jsx        |     100 |      100 |     100 |     100 |                   
+  Sidebar.jsx             |     100 |      100 |     100 |     100 |                   
+  StatCard.jsx            |     100 |      100 |     100 |     100 |                   
+ src/components/remote    |     100 |      100 |     100 |     100 |                   
+  RemoteTaskCard.jsx      |     100 |      100 |     100 |     100 |                   
+  RemoteTaskFilters.jsx   |     100 |      100 |     100 |     100 |                   
+  RemoteTaskList.jsx      |     100 |      100 |     100 |     100 |                   
+  RemoteTaskSkeleton.jsx  |     100 |      100 |     100 |     100 |                   
+ src/components/tasks     |     100 |      100 |     100 |     100 |                   
+  TaskCard.jsx            |     100 |      100 |     100 |     100 |                   
+  TaskFilters.jsx         |     100 |      100 |     100 |     100 |                   
+  TaskForm.jsx            |     100 |      100 |     100 |     100 |                   
+  TaskList.jsx            |     100 |      100 |     100 |     100 |                   
+ src/components/ui        |       0 |        0 |       0 |       0 |                   
+  index.js                |       0 |        0 |       0 |       0 |                   
+ src/components/ui/Alert  |     100 |    94.44 |     100 |     100 |                   
+  Alert.jsx               |     100 |    94.44 |     100 |     100 | 24                
+ src/components/ui/Badge  |     100 |      100 |     100 |     100 |                   
+  Badge.jsx               |     100 |      100 |     100 |     100 |                   
+ src/components/ui/Button |     100 |      100 |     100 |     100 |                   
+  Button.jsx              |     100 |      100 |     100 |     100 |                   
+ src/components/ui/Card   |     100 |      100 |     100 |     100 |                   
+  Card.jsx                |     100 |      100 |     100 |     100 |                   
+ src/components/ui/Input  |     100 |      100 |     100 |     100 |                   
+  Input.jsx               |     100 |      100 |     100 |     100 |                   
+ src/components/ui/Modal  |   94.73 |    91.37 |     100 |   95.58 |                   
+  Modal.jsx               |   94.73 |    91.37 |     100 |   95.58 | 80-82             
+ src/components/ui/Select |     100 |      100 |     100 |     100 |                   
+  Select.jsx              |     100 |      100 |     100 |     100 |                   
+ src/context              |     100 |      100 |     100 |     100 |                   
+  TaskContext.jsx         |     100 |      100 |     100 |     100 |                   
+ src/hooks                |   96.92 |    90.62 |     100 |     100 |                   
+  useLocalStorage.js      |     100 |      100 |     100 |     100 |                   
+  useRemoteTasks.js       |   93.93 |    81.25 |     100 |     100 | 23-29             
+  useRouteFocus.js        |     100 |      100 |     100 |     100 |                   
+  useTaskFilters.js       |     100 |      100 |     100 |     100 |                   
+  useTasks.js             |     100 |      100 |     100 |     100 |                   
+ src/layouts              |     100 |      100 |     100 |     100 |                   
+  AppLayout.jsx           |     100 |      100 |     100 |     100 |                   
+ src/pages                |   97.41 |    93.42 |   95.16 |   97.82 |                   
+  ComponentsPage.jsx      |   98.36 |      100 |      96 |   98.27 | 383               
+  DashboardPage.jsx       |     100 |    83.33 |     100 |     100 | 73                
+  ExplorePage.jsx         |   93.02 |    91.66 |   88.88 |   94.44 | 174-175           
+  NotFoundPage.jsx        |     100 |      100 |     100 |     100 |                   
+  SettingsPage.jsx        |     100 |      100 |     100 |     100 |                   
+  TasksPage.jsx           |     100 |       95 |     100 |     100 | 58                
+ src/reducers             |     100 |      100 |     100 |     100 |                   
+  taskReducer.js          |     100 |      100 |     100 |     100 |                   
+ src/services             |   97.43 |    95.83 |     100 |     100 |                   
+  apiClient.js            |   94.11 |     90.9 |     100 |     100 | 34                
+  remoteTaskService.js    |     100 |      100 |     100 |     100 |                   
+  taskStorage.js          |     100 |      100 |     100 |     100 |                   
+ src/utils                |     100 |      100 |     100 |     100 |                   
+  remoteTaskValidation.js |     100 |      100 |     100 |     100 |                   
+  taskStatistics.js       |     100 |      100 |     100 |     100 |                   
+  taskValidation.js       |     100 |      100 |     100 |     100 |                   
+--------------------------|---------|----------|---------|---------|-------------------
+
+Test Suites: 13 passed, 13 total
+Tests:       119 passed, 119 total
+Snapshots:   0 total
+Time:        5.788 s, estimated 6 s
+Ran all test suites.
+Test results written to: evidence/week6/jest-results.json

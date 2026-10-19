@@ -1,0 +1,92 @@
+[
+  {
+    "file": "baseline/components-320.jpg",
+    "bytes": 33821,
+    "sha256": "a2b634138865b50f3755f0ad450e4b4c11ab8ef32ac75c114aae14789033ee56"
+  },
+  {
+    "file": "baseline/dashboard-320.jpg",
+    "bytes": 33766,
+    "sha256": "3eb47554f79064a63eb8411154a46d454f52a1e521d5e5ed46dbf9d35c6663ec"
+  },
+  {
+    "file": "optimized/dashboard-1440.jpg",
+    "bytes": 94044,
+    "sha256": "25351fd46be990bb02b3140f7092b12f47068cd9477064e51c49cad189fb509f"
+  },
+  {
+    "file": "optimized/dashboard-320.jpg",
+    "bytes": 38034,
+    "sha256": "33e69f073ee68d37e7a7b3d623daaa9e541d2e91b4fd6f81bd5625c0dd80860c"
+  },
+  {
+    "file": "optimized/dialog-320.jpg",
+    "bytes": 19271,
+    "sha256": "3cbd15971def7339313869ccd747c6ffa7d9b0dcc2386f33c591b51b8f79482d"
+  },
+  {
+    "file": "optimized/explore-final-1440.jpg",
+    "bytes": 81915,
+    "sha256": "0ec1a350ba592ca4421986391833926c7d8e11ceadc3b716e849190f9aad3306"
+  },
+  {
+    "file": "optimized/keyboard-task-390.jpg",
+    "bytes": 38736,
+    "sha256": "2996d621f828a78471b620c4de950a936bbcd470d2fef7aea024514a9eea37c2"
+  },
+  {
+    "file": "optimized/lighthouse-dashboard-mobile.jpg",
+    "bytes": 47620,
+    "sha256": "4c024f3471d70d75170777a5a985dee1376f871cb8f0152f9b09b4d7aaaf7bdf"
+  },
+  {
+    "file": "optimized/remote-keyboard.jpg",
+    "bytes": 89541,
+    "sha256": "904d407cce0d0dfe45f023fa0134503111946664ea6501405b385c2c6cfcac20"
+  },
+  {
+    "file": "optimized/settings-1024.jpg",
+    "bytes": 69773,
+    "sha256": "544e481ccfa1aad42e8bf2e244a2af36122b34e3dd8c77f91681e007cd7ec46c"
+  },
+  {
+    "file": "optimized/settings-1440.jpg",
+    "bytes": 74297,
+    "sha256": "65cbf697e00f5e0f8e616d3ed18622ecf446e34590f5ae09db3a9384fa1dd246"
+  },
+  {
+    "file": "optimized/settings-1920.jpg",
+    "bytes": 84740,
+    "sha256": "43dac93c4bbfa95ce7c89d75e1226d5dc9a053bef8ac43c47df15d707463b0c8"
+  },
+  {
+    "file": "optimized/settings-320.jpg",
+    "bytes": 34378,
+    "sha256": "a21a682a71836f302f11493f36b5ed5f7e2d28347156514e88cc7aa7f4304c39"
+  },
+  {
+    "file": "optimized/settings-375.jpg",
+    "bytes": 38039,
+    "sha256": "208684c9c3546f8900e005a5b4499169bd310765caf0c0baa54a6a92c4f6c5f9"
+  },
+  {
+    "file": "optimized/settings-390.jpg",
+    "bytes": 38141,
+    "sha256": "968c155b69e7cf25334b5829207efe49d0c096cb495c4df5e2ff278f4587faba"
+  },
+  {
+    "file": "optimized/settings-768.jpg",
+    "bytes": 57485,
+    "sha256": "4ff513b392641e98e4885db05b9ef8313059e628c254e8d00e54cd859719d402"
+  },
+  {
+    "file": "optimized/zoom-200.jpg",
+    "bytes": 18348,
+    "sha256": "3851e0e13abcf97c9abc2be32ac4c3aad924ecb478df9d8e50e4b4e96475e3bb"
+  },
+  {
+    "file": "settings-320-before-fix.jpg",
+    "bytes": 31453,
+    "sha256": "43e27f7581728a40fe5879c9171795ede77a2e22b7a4038fcaf1e12982395433"
+  }
+]

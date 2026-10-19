@@ -1,0 +1,20 @@
+{
+  "npm ci": 0,
+  "npm test -- --watch=false": 0,
+  "npm test -- --watch=false --coverage": 0,
+  "npm run lint": 0,
+  "npm run format:check": 0,
+  "npm run build": 0,
+  "npm audit": 1,
+  "buildWarnings": 1,
+  "testsPassed": 119,
+  "testsFailed": 0,
+  "suitesPassed": 13,
+  "lighthouseAudits": {
+    "baseline": 24,
+    "optimized": 24
+  },
+  "responsiveChecks": 35,
+  "allResponsiveChecksWithoutOverflow": true,
+  "wordReportReviewedPages": 11
+}

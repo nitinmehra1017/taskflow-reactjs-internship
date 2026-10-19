@@ -1,0 +1,12 @@
+{
+  "environment": "React development profiling build in Jest/jsdom; deterministic eight-record fixture; single import",
+  "cardCommits": [
+    {
+      "id": "Profile record 1",
+      "phase": "update",
+      "actualDuration": 0.08687399999985246,
+      "baseDuration": 0.08341799999988098
+    }
+  ],
+  "count": 1
+}

@@ -1,0 +1,54 @@
+{
+  "environment": "React development profiling build in Jest/jsdom; deterministic eight-record fixture; single import",
+  "cardCommits": [
+    {
+      "id": "Profile record 1",
+      "phase": "update",
+      "actualDuration": 0.08441500000014912,
+      "baseDuration": 0.07550000000014734
+    },
+    {
+      "id": "Profile record 2",
+      "phase": "update",
+      "actualDuration": 0.0733749999998281,
+      "baseDuration": 0.06887600000015937
+    },
+    {
+      "id": "Profile record 3",
+      "phase": "update",
+      "actualDuration": 0.06787699999995311,
+      "baseDuration": 0.06404299999985597
+    },
+    {
+      "id": "Profile record 4",
+      "phase": "update",
+      "actualDuration": 0.06896199999982855,
+      "baseDuration": 0.0659179999997832
+    },
+    {
+      "id": "Profile record 5",
+      "phase": "update",
+      "actualDuration": 0.07770699999991848,
+      "baseDuration": 0.07450200000016594
+    },
+    {
+      "id": "Profile record 6",
+      "phase": "update",
+      "actualDuration": 0.057251000000178465,
+      "baseDuration": 0.05483599999990929
+    },
+    {
+      "id": "Profile record 7",
+      "phase": "update",
+      "actualDuration": 0.08358499999997093,
+      "baseDuration": 0.08087499999987813
+    },
+    {
+      "id": "Profile record 8",
+      "phase": "update",
+      "actualDuration": 0.05987199999992754,
+      "baseDuration": 0.057747999999833155
+    }
+  ],
+  "count": 8
+}

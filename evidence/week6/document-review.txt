@@ -1,0 +1,1 @@
+Final Word report rendered to 11 pages using the bundled document runtime. All 11 page PNGs visually inspected. No document clipping, overlap, broken tables or orphan spill pages found. Mobile dialog screenshot intentionally shows a scrollable viewport state.

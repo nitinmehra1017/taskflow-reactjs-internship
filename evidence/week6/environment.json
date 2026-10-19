@@ -1,0 +1,20 @@
+{
+  "node": "24.22.0",
+  "npm": "11.19.1",
+  "lighthouse": "13.5.0",
+  "chrome": "155.0.0.0",
+  "baselineCommit": "7af5394961c7cec85fdb1df4d01ec2423dd0e694",
+  "server": "127.0.0.1:4173",
+  "presets": [
+    "mobile default",
+    "desktop"
+  ],
+  "runsPerRouteAndPreset": 3,
+  "routes": [
+    "/",
+    "/tasks",
+    "/components",
+    "/explore"
+  ],
+  "notes": "CLI audits serial, new headless sessions; Lighthouse default cache/storage reset. Separate interactive Chrome responsive/keyboard checks. Live Explore network is uncontrolled. Local CPU and tool activity introduce noise; scores are not field data."
+}

@@ -1,0 +1,39 @@
+
+> taskflow-reactjs-internship@0.6.0 build
+> webpack --mode production
+
+assets by status 336 KiB [cached] 10 assets
+assets by path . 28 KiB
+  assets by path assets/ 27 KiB
+    asset assets/explore.d9f31091.js 13.5 KiB [emitted] [immutable] [minimized] (name: explore) 1 related asset
+    asset assets/explore.4ddad4a4.css 8.95 KiB [emitted] [immutable] (name: explore) 1 related asset
+    asset assets/runtime.5ff2d06a.js 4.59 KiB [emitted] [immutable] [minimized] (name: runtime) 1 related asset
+  assets by status 1.03 KiB [compared for emit]
+    asset index.html 791 bytes [emitted] [compared for emit] [minimized]
+    asset taskflow-mark.svg 264 bytes [compared for emit]
+Entrypoint main [big] 293 KiB (1.5 MiB) = assets/runtime.5ff2d06a.js 4.59 KiB assets/react-dom.03b718ad.js 206 KiB assets/router.04501867.js 36.9 KiB assets/main.670dfef2.css 20.1 KiB assets/main.f5b71115.js 25.6 KiB 6 auxiliary assets
+orphan modules 165 KiB (javascript) 10.8 KiB (runtime) [orphan] 103 modules
+runtime modules 10.9 KiB 12 modules
+cacheable modules 1.08 MiB (javascript) 264 bytes (asset) 32.4 KiB (css/mini-extract)
+  modules by path ./src/ 89.8 KiB (javascript) 264 bytes (asset) 32.4 KiB (css/mini-extract)
+    modules by layer 89.8 KiB (javascript) 264 bytes (asset) 14 modules
+    css modules 32.4 KiB
+      modules by path ./src/components/ 6.56 KiB 7 modules
+      modules by path ./src/styles/*.css 22.4 KiB 5 modules
+      css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs/index.js!./src/pages/ComponentsPage.scss 3.47 KiB [built] [code generated]
+  modules by path ./node_modules/ 1020 KiB
+    modules by path ./node_modules/react/ 19 KiB 4 modules
+    modules by path ./node_modules/react-dom/ 620 KiB 4 modules
+    modules by path ./node_modules/scheduler/ 10.1 KiB 2 modules
+    ./node_modules/react-router/dist/development/chunk-OB3PAWPO.mjs 367 KiB [built] [code generated]
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (293 KiB)
+      assets/runtime.5ff2d06a.js
+      assets/react-dom.03b718ad.js
+      assets/router.04501867.js
+      assets/main.670dfef2.css
+      assets/main.f5b71115.js
+
+webpack 5.112.0 compiled with 1 warning in 1786 ms

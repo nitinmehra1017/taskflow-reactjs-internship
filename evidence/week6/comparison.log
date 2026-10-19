@@ -1,0 +1,214 @@
+{
+  "baseline": {
+    "assets": [
+      {
+        "name": "assets/8.d6b5e5a9.js",
+        "bytes": 256412,
+        "initial": true
+      },
+      {
+        "name": "assets/main.b5616bf0.js",
+        "bytes": 48321,
+        "initial": true
+      },
+      {
+        "name": "assets/main.eab6c71b.css",
+        "bytes": 32041,
+        "initial": true
+      },
+      {
+        "name": "assets/runtime.69b6354b.js",
+        "bytes": 1701,
+        "initial": true
+      },
+      {
+        "name": "index.html",
+        "bytes": 700,
+        "initial": false
+      },
+      {
+        "name": "assets/taskflow-mark.4c0b9d52.svg",
+        "bytes": 264,
+        "initial": false
+      },
+      {
+        "name": "taskflow-mark.svg",
+        "bytes": 264,
+        "initial": false
+      }
+    ],
+    "initialJsBytes": 306434,
+    "initialCssBytes": 32041,
+    "totalJsBytes": 306434,
+    "warnings": 3
+  },
+  "optimized": {
+    "assets": [
+      {
+        "name": "assets/react-dom.03b718ad.js",
+        "bytes": 210743,
+        "initial": true
+      },
+      {
+        "name": "assets/router.04501867.js",
+        "bytes": 37776,
+        "initial": true
+      },
+      {
+        "name": "assets/main.f5b71115.js",
+        "bytes": 26218,
+        "initial": true
+      },
+      {
+        "name": "assets/main.670dfef2.css",
+        "bytes": 20576,
+        "initial": true
+      },
+      {
+        "name": "assets/components.367ab6c3.js",
+        "bytes": 16696,
+        "initial": false
+      },
+      {
+        "name": "assets/explore.d9f31091.js",
+        "bytes": 13793,
+        "initial": false
+      },
+      {
+        "name": "assets/tasks.c597d784.js",
+        "bytes": 12462,
+        "initial": false
+      },
+      {
+        "name": "assets/components.d98dedd9.css",
+        "bytes": 9330,
+        "initial": false
+      },
+      {
+        "name": "assets/explore.4ddad4a4.css",
+        "bytes": 9165,
+        "initial": false
+      },
+      {
+        "name": "assets/tasks.a3aee680.css",
+        "bytes": 7177,
+        "initial": false
+      },
+      {
+        "name": "assets/runtime.5ff2d06a.js",
+        "bytes": 4700,
+        "initial": true
+      },
+      {
+        "name": "assets/settings.063ab133.js",
+        "bytes": 2802,
+        "initial": false
+      },
+      {
+        "name": "index.html",
+        "bytes": 791,
+        "initial": false
+      },
+      {
+        "name": "assets/taskflow-mark.4c0b9d52.svg",
+        "bytes": 264,
+        "initial": false
+      },
+      {
+        "name": "taskflow-mark.svg",
+        "bytes": 264,
+        "initial": false
+      }
+    ],
+    "initialJsBytes": 279437,
+    "initialCssBytes": 20576,
+    "totalJsBytes": 325190,
+    "warnings": 1
+  },
+  "changes": {
+    "initialJsPercent": -8.81,
+    "initialCssPercent": -35.78,
+    "lighthouse": [
+      {
+        "route": "dashboard",
+        "mode": "mobile",
+        "fcpPercent": 80,
+        "lcpPercent": 0.32,
+        "tbtPercent": null,
+        "clsPercent": null,
+        "speedIndexPercent": 25.02,
+        "transferredPercent": -7.36
+      },
+      {
+        "route": "tasks",
+        "mode": "mobile",
+        "fcpPercent": 59.78,
+        "lcpPercent": -0.07,
+        "tbtPercent": null,
+        "clsPercent": null,
+        "speedIndexPercent": 59.78,
+        "transferredPercent": -1.06
+      },
+      {
+        "route": "components",
+        "mode": "mobile",
+        "fcpPercent": 100.22,
+        "lcpPercent": 0.03,
+        "tbtPercent": null,
+        "clsPercent": null,
+        "speedIndexPercent": 100.22,
+        "transferredPercent": 0.17
+      },
+      {
+        "route": "explore",
+        "mode": "mobile",
+        "fcpPercent": -0.2,
+        "lcpPercent": 0.06,
+        "tbtPercent": null,
+        "clsPercent": 0,
+        "speedIndexPercent": -0.2,
+        "transferredPercent": -0.12
+      },
+      {
+        "route": "dashboard",
+        "mode": "desktop",
+        "fcpPercent": 1.26,
+        "lcpPercent": 11.46,
+        "tbtPercent": null,
+        "clsPercent": null,
+        "speedIndexPercent": 1.26,
+        "transferredPercent": -7.36
+      },
+      {
+        "route": "tasks",
+        "mode": "desktop",
+        "fcpPercent": -6.67,
+        "lcpPercent": 9.9,
+        "tbtPercent": null,
+        "clsPercent": null,
+        "speedIndexPercent": -6.67,
+        "transferredPercent": -1.06
+      },
+      {
+        "route": "components",
+        "mode": "desktop",
+        "fcpPercent": 49.93,
+        "lcpPercent": 10.03,
+        "tbtPercent": null,
+        "clsPercent": null,
+        "speedIndexPercent": 52.56,
+        "transferredPercent": 0.17
+      },
+      {
+        "route": "explore",
+        "mode": "desktop",
+        "fcpPercent": 49.54,
+        "lcpPercent": 9.85,
+        "tbtPercent": null,
+        "clsPercent": 3787.31,
+        "speedIndexPercent": 49.54,
+        "transferredPercent": -0.11
+      }
+    ]
+  }
+}

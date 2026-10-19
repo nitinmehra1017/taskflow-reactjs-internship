@@ -1,0 +1,45 @@
+
+> taskflow-reactjs-internship@0.6.0 build
+> webpack --mode production
+
+assets by status 264 bytes [cached] 1 asset
+assets by path assets/ 362 KiB
+  assets by path assets/*.js 318 KiB
+    asset assets/react-dom.03b718ad.js 206 KiB [emitted] [immutable] [minimized] (name: react-dom) (id hint: reactDom) 2 related assets
+    asset assets/router.04501867.js 36.9 KiB [emitted] [immutable] [minimized] (name: router) (id hint: router) 2 related assets
+    asset assets/main.f5b71115.js 25.6 KiB [emitted] [immutable] [minimized] (name: main) 2 related assets
+    asset assets/components.367ab6c3.js 16.3 KiB [emitted] [immutable] [minimized] (name: components) 1 related asset
+    + 4 assets
+  assets by path assets/*.css 44.9 KiB
+    asset assets/main.b1ba3f4c.css 19.8 KiB [emitted] [immutable] (name: main) 1 related asset
+    asset assets/components.d98dedd9.css 9.11 KiB [emitted] [immutable] (name: components) 1 related asset
+    asset assets/explore.b91017f3.css 8.96 KiB [emitted] [immutable] (name: explore) 1 related asset
+    asset assets/tasks.a3aee680.css 7.01 KiB [emitted] [immutable] (name: tasks) 1 related asset
+asset index.html 791 bytes [emitted] [minimized]
+asset taskflow-mark.svg 264 bytes [compared for emit]
+Entrypoint main [big] 293 KiB (1.49 MiB) = assets/runtime.ed076a41.js 4.59 KiB assets/react-dom.03b718ad.js 206 KiB assets/router.04501867.js 36.9 KiB assets/main.b1ba3f4c.css 19.8 KiB assets/main.f5b71115.js 25.6 KiB 6 auxiliary assets
+orphan modules 164 KiB (javascript) 10.8 KiB (runtime) [orphan] 103 modules
+runtime modules 10.9 KiB 12 modules
+cacheable modules 1.08 MiB (javascript) 264 bytes (asset) 32.2 KiB (css/mini-extract)
+  modules by path ./src/ 89.8 KiB (javascript) 264 bytes (asset) 32.2 KiB (css/mini-extract)
+    modules by layer 89.8 KiB (javascript) 264 bytes (asset) 14 modules
+    css modules 32.2 KiB
+      modules by path ./src/components/ 6.56 KiB 7 modules
+      modules by path ./src/styles/*.css 22.1 KiB 5 modules
+      css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs/index.js!./src/pages/ComponentsPage.scss 3.47 KiB [built] [code generated]
+  modules by path ./node_modules/ 1020 KiB
+    modules by path ./node_modules/react/ 19 KiB 4 modules
+    modules by path ./node_modules/react-dom/ 620 KiB 4 modules
+    modules by path ./node_modules/scheduler/ 10.1 KiB 2 modules
+    ./node_modules/react-router/dist/development/chunk-OB3PAWPO.mjs 367 KiB [built] [code generated]
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (293 KiB)
+      assets/runtime.ed076a41.js
+      assets/react-dom.03b718ad.js
+      assets/router.04501867.js
+      assets/main.b1ba3f4c.css
+      assets/main.f5b71115.js
+
+webpack 5.112.0 compiled with 1 warning in 1778 ms

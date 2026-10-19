@@ -1,0 +1,547 @@
+
+> taskflow-reactjs-internship@0.6.0 test
+> jest --runInBand --watch=false
+
+FAIL tests/remote.test.jsx
+  ● explorer searches, combines filters, resets pagination and reports empty results
+
+    TestingLibraryElementError: Unable to find an element with the text: Loading remote tasks and users…. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"app-layout"[39m
+        [36m>[39m
+          [36m<a[39m
+            [33mclass[39m=[32m"skip-link"[39m
+            [33mhref[39m=[32m"#main-content"[39m
+          [36m>[39m
+            [0mSkip to main content[0m
+          [36m</a>[39m
+          [36m<aside[39m
+            [33mclass[39m=[32m"sidebar"[39m
+          [36m>[39m
+            [36m<a[39m
+              [33maria-label[39m=[32m"TaskFlow home"[39m
+              [33mclass[39m=[32m"brand"[39m
+              [33mdata-discover[39m=[32m"true"[39m
+              [33mhref[39m=[32m"/"[39m
+            [36m>[39m
+              [36m<img[39m
+                [33malt[39m=[32m""[39m
+                [33mheight[39m=[32m"36"[39m
+                [33msrc[39m=[32m"test-asset.svg"[39m
+                [33mwidth[39m=[32m"36"[39m
+              [36m/>[39m
+              [36m<span>[39m
+                [0mtaskflow[0m
+                [36m<span[39m
+                  [33mclass[39m=[32m"brand-dot"[39m
+                [36m>[39m
+                  [0m.[0m
+                [36m</span>[39m
+              [36m</span>[39m
+            [36m</a>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"workspace-label"[39m
+            [36m>[39m
+              [36m<span[39m
+                [33mclass[39m=[32m"workspace-icon"[39m
+              [36m>[39m
+                [0mTF[0m
+              [36m</span>[39m
+              [36m<div>[39m
+                [0mMy workspace[0m
+                [36m<small>[39m
+                  [0mPersonal workspace[0m
+                [36m</small>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m"nav-label"[39m
+            [36m>[39m
+              [0mWORKSPACE[0m
+            [36m</p>[39m
+            [36m<nav[39m
+              [33maria-label[39m=[32m"Main navigation"[39m
+            [36m>[39m
+              [36m<a[39m
+                [33mclass[39m=[32m"nav-link"[39m
+                [33mdata-discover[39m=[32m"true"[39m
+                [33mhref[39m=[32m"/"[39m
+              [36m>[39m
+                [36m<svg[39m
+                  [33maria-hidden[39m=[32m"true"[39m
+                  [33mfill[39m=[32m"none"[39m
+                  [33mfocusable[39m=[32m"false"[39m
+                  [33mheight[39m=[32m"20"[39m
+                  [33mstroke[39m=[32m"currentColor"[39m
+                  [33mstroke-linecap[39m=[32m"round"[39m
+                  [33mstroke-linejoin[39m=[32m"round"[39m
+                  [33mstroke-width[39m=[32m"1.7"[39m
+                  [33mviewBox[39m=[32m"0 0 24 24"[39m
+                  [33mwidth[39m=[32m"20"[39m
+                [36m>[39m
+                  [36m<path[39m
+                    [33md[39m=[32m"M3 3h7v7H3z M14 3h7v7h-7z M3 14h7v7H3z M14 14h7v7h-7z"[39m
+                  [36m/>[39m
+                [36m</svg>[39m
+                [36m<span>[39m
+                  [0mOverview[0m
+                [36m</span>[39m
+                [36m<span[39m
+                  [33mclass[39m=[32m"nav-indicator"[39m
+                [36m/>[39m
+              [36m</a>[39m
+              [36m<a[39m
+                [33mclass[39m=[32m"nav-link"[39m
+                [33mdata-discover[39m=[32m"true"[39m
+                [33mhref[39m=[32m"/tasks"[39m
+              [36m>[39m
+                [36m<svg[39m
+                  [33maria-hidden[39m=[32m"true"[39m
+                  [33mfill[39m=[32m"none"[39m
+                  [33mfocusable[39m=[32m"false"[39m
+                  [33mheight[39m=[32m"20"[39m
+                  [33mstroke[39m=[32m"currentColor"[39m
+                  [33mstroke-linecap[39m=[32m"round"[39m
+                  [33mstroke-linejoin[39m=[32m"round"[39m
+                  [33mstroke-width[39m=[32m"1.7"[39m
+                  [33mviewBox[39m=[32m"0 0 24 24"[39m
+                  [33mwidth[39m=[32m"20"[39m
+                [36m>[39m
+                  [36m<path[39m
+                    [33md[39m=[32m"M9 6h12 M9 12h12 M9 18h12 M3 6l1 1 2-2 M3 12l1 1 2-2 M3 18l1 1 2-2"[39m
+                  [36m/>[39m
+                [36m</svg>[39m
+                [36m<span>[39m
+                  [0mTasks[0m
+                [36m</span>[39m
+              [36m</a>[39m
+              [36m<a[39m
+                [33maria-current[39m=[32m"page"[39m
+                [33mclass[39m=[32m"nav-link active"[39m
+                [33mdata-discover[39m=[32m"true"[39m
+                [33mhref[39m=[32m"/explore"[39m
+              [36m>[39m
+                [36m<svg[39m
+                  [33maria-hidden[39m=[32m"true"[39m
+                  [33mfill[39m=[32m"none"[39m
+                  [33mfocusable[39m=[32m"false"[39m
+                  [33mheight[39m=[32m"20"[39m
+                  [33mstroke[39m=[32m"currentColor"[39m
+                  [33mstroke-linecap[39m=[32m"round"[39m
+                  [33mstroke-linejoin[39m=[32m"round"[39m
+                  [33mstroke-width[39m=[32m"1.7"[39m
+                  [33mviewBox[39m=[32m"0 0 24 24"[39m
+                  [33mwidth[39m=[32m"20"[39m
+                [36m>[39m
+                  [36m<path[39m
+                    [33md[39m=[32m"M12 5v15 M12 5C8 2 4 3 2 4v15c4-2 7-1 10 1 3-2 6-3 10-1V4c-2-1-6-2-10 1"[39m
+                  [36m/>[39m
+                [36m</svg>[39m
+                [36m<span>[39m
+                  [0mExplore[0m
+                [36m</span>[39m
+              [36m</a>[39m
+              [36m<a[39m
+                [33mclass[39m=[32m"nav-link"[39m
+                [33mdata-discover[39m=[32m"true"[39m
+                [33mhref[39m=[32m"/components"[39m
+              [36m>[39m
+                [36m<svg[39m
+                  [33maria-hidden[39m=[32m"true"[39m
+                  [33mfill[39m=[32m"none"[39m
+                  [33mfocusable[39m=[32m"false"[39m
+                  [33mheight[39m=[32m"20"[39m
+                  [33mstroke[39m=[32m"currentColor"[39m
+                  [33mstroke-linecap[39m=[32m"round"[39m
+                  [33mstroke-linejoin[39m=[32m"round"[39m
+                  [33mstroke-width[39m=[32m"1.7"[39m
+                  [33mviewBox[39m=[32m"0 0 24 24"[39m
+                  [33mwidth[39m=[32m"20"[39m
+                [36m>[39m
+                  [36m<path[39m
+                    [33md[39m=[32m"m12 3 10 5-10 5L2 8z M2 12l10 5 10-5 M2 16l10 5 10-5"[39m
+                  [36m/>[39m
+                [36m</svg>[39m
+                [36m<span>[39m
+                  [0mComponents[0m
+                [36m</span>[39m
+              [36m</a>[39m
+              [36m<a[39m
+                [33mclass[39m=[32m"nav-link"[39m
+                [33mdata-discover[39m=[32m"true"[39m
+                [33mhref[39m=[32m"/settings"[39m
+              [36m>[39m
+                [36m<svg[39m
+                  [33maria-hidden[39m=[32m"true"[39m
+                  [33mfill[39m=[32m"none"[39m
+                  [33mfocusable[39m=[32m"false"[39m
+                  [33mheight[39m=[32m"20"[39m
+                  [33mstroke[39m=[32m"currentColor"[39m
+                  [33mstroke-linecap[39m=[32m"round"[39m
+                  [33mstroke-linejoin[39m=[32m"round"[39m
+                  [33mstroke-width[39m=[32m"1.7"[39m
+                  [33mviewBox[39m=[32m"0 0 24 24"[39m
+                  [33mwidth[39m=[32m"20"[39m
+       ...
+
+      198 |   const user = userEvent.setup();
+      199 |   await renderExplorer();
+    > 200 |   expect(screen.getByText('Loading remote tasks and users…')).toBeInTheDocument();
+          |                 ^
+      201 |   await screen.findByRole('heading', { name: 'Remote idea 1', exact: true });
+      202 |   expect(
+      203 |     within(screen.getByRole('list', { name: 'Remote tasks' })).getAllByRole('listitem'),
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+      at Object.getByText (tests/remote.test.jsx:200:17)
+
+  ● import becomes one persistent local copy and drives dashboard statistics
+
+    TestingLibraryElementError: Unable to find an element with the text: Imported local copy. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div />[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"app-layout"[39m
+        [36m>[39m
+          [36m<a[39m
+            [33mclass[39m=[32m"skip-link"[39m
+            [33mhref[39m=[32m"#main-content"[39m
+          [36m>[39m
+            [0mSkip to main content[0m
+          [36m</a>[39m
+          [36m<aside[39m
+            [33mclass[39m=[32m"sidebar"[39m
+          [36m>[39m
+            [36m<a[39m
+              [33maria-label[39m=[32m"TaskFlow home"[39m
+              [33mclass[39m=[32m"brand"[39m
+              [33mdata-discover[39m=[32m"true"[39m
+              [33mhref[39m=[32m"/"[39m
+            [36m>[39m
+              [36m<img[39m
+                [33malt[39m=[32m""[39m
+                [33mheight[39m=[32m"36"[39m
+                [33msrc[39m=[32m"test-asset.svg"[39m
+                [33mwidth[39m=[32m"36"[39m
+              [36m/>[39m
+              [36m<span>[39m
+                [0mtaskflow[0m
+                [36m<span[39m
+                  [33mclass[39m=[32m"brand-dot"[39m
+                [36m>[39m
+                  [0m.[0m
+                [36m</span>[39m
+              [36m</span>[39m
+            [36m</a>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"workspace-label"[39m
+            [36m>[39m
+              [36m<span[39m
+                [33mclass[39m=[32m"workspace-icon"[39m
+              [36m>[39m
+                [0mTF[0m
+              [36m</span>[39m
+              [36m<div>[39m
+                [0mMy workspace[0m
+                [36m<small>[39m
+                  [0mPersonal workspace[0m
+                [36m</small>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m"nav-label"[39m
+            [36m>[39m
+              [0mWORKSPACE[0m
+            [36m</p>[39m
+            [36m<nav[39m
+              [33maria-label[39m=[32m"Main navigation"[39m
+            [36m>[39m
+              [36m<a[39m
+                [33mclass[39m=[32m"nav-link"[39m
+                [33mdata-discover[39m=[32m"true"[39m
+                [33mhref[39m=[32m"/"[39m
+              [36m>[39m
+                [36m<svg[39m
+                  [33maria-hidden[39m=[32m"true"[39m
+                  [33mfill[39m=[32m"none"[39m
+                  [33mfocusable[39m=[32m"false"[39m
+                  [33mheight[39m=[32m"20"[39m
+                  [33mstroke[39m=[32m"currentColor"[39m
+                  [33mstroke-linecap[39m=[32m"round"[39m
+                  [33mstroke-linejoin[39m=[32m"round"[39m
+                  [33mstroke-width[39m=[32m"1.7"[39m
+                  [33mviewBox[39m=[32m"0 0 24 24"[39m
+                  [33mwidth[39m=[32m"20"[39m
+                [36m>[39m
+                  [36m<path[39m
+                    [33md[39m=[32m"M3 3h7v7H3z M14 3h7v7h-7z M3 14h7v7H3z M14 14h7v7h-7z"[39m
+                  [36m/>[39m
+                [36m</svg>[39m
+                [36m<span>[39m
+                  [0mOverview[0m
+                [36m</span>[39m
+                [36m<span[39m
+                  [33mclass[39m=[32m"nav-indicator"[39m
+                [36m/>[39m
+              [36m</a>[39m
+              [36m<a[39m
+                [33maria-current[39m=[32m"page"[39m
+                [33mclass[39m=[32m"nav-link active"[39m
+                [33mdata-discover[39m=[32m"true"[39m
+                [33mhref[39m=[32m"/tasks"[39m
+              [36m>[39m
+                [36m<svg[39m
+                  [33maria-hidden[39m=[32m"true"[39m
+                  [33mfill[39m=[32m"none"[39m
+                  [33mfocusable[39m=[32m"false"[39m
+                  [33mheight[39m=[32m"20"[39m
+                  [33mstroke[39m=[32m"currentColor"[39m
+                  [33mstroke-linecap[39m=[32m"round"[39m
+                  [33mstroke-linejoin[39m=[32m"round"[39m
+                  [33mstroke-width[39m=[32m"1.7"[39m
+                  [33mviewBox[39m=[32m"0 0 24 24"[39m
+                  [33mwidth[39m=[32m"20"[39m
+                [36m>[39m
+                  [36m<path[39m
+                    [33md[39m=[32m"M9 6h12 M9 12h12 M9 18h12 M3 6l1 1 2-2 M3 12l1 1 2-2 M3 18l1 1 2-2"[39m
+                  [36m/>[39m
+                [36m</svg>[39m
+                [36m<span>[39m
+                  [0mTasks[0m
+                [36m</span>[39m
+              [36m</a>[39m
+              [36m<a[39m
+                [33mclass[39m=[32m"nav-link"[39m
+                [33mdata-discover[39m=[32m"true"[39m
+                [33mhref[39m=[32m"/explore"[39m
+              [36m>[39m
+                [36m<svg[39m
+                  [33maria-hidden[39m=[32m"true"[39m
+                  [33mfill[39m=[32m"none"[39m
+                  [33mfocusable[39m=[32m"false"[39m
+                  [33mheight[39m=[32m"20"[39m
+                  [33mstroke[39m=[32m"currentColor"[39m
+                  [33mstroke-linecap[39m=[32m"round"[39m
+                  [33mstroke-linejoin[39m=[32m"round"[39m
+                  [33mstroke-width[39m=[32m"1.7"[39m
+                  [33mviewBox[39m=[32m"0 0 24 24"[39m
+                  [33mwidth[39m=[32m"20"[39m
+                [36m>[39m
+                  [36m<path[39m
+                    [33md[39m=[32m"M12 5v15 M12 5C8 2 4 3 2 4v15c4-2 7-1 10 1 3-2 6-3 10-1V4c-2-1-6-2-10 1"[39m
+                  [36m/>[39m
+                [36m</svg>[39m
+                [36m<span>[39m
+                  [0mExplore[0m
+                [36m</span>[39m
+              [36m</a>[39m
+              [36m<a[39m
+                [33mclass[39m=[32m"nav-link"[39m
+                [33mdata-discover[39m=[32m"true"[39m
+                [33mhref[39m=[32m"/components"[39m
+              [36m>[39m
+                [36m<svg[39m
+                  [33maria-hidden[39m=[32m"true"[39m
+                  [33mfill[39m=[32m"none"[39m
+                  [33mfocusable[39m=[32m"false"[39m
+                  [33mheight[39m=[32m"20"[39m
+                  [33mstroke[39m=[32m"currentColor"[39m
+                  [33mstroke-linecap[39m=[32m"round"[39m
+                  [33mstroke-linejoin[39m=[32m"round"[39m
+                  [33mstroke-width[39m=[32m"1.7"[39m
+                  [33mviewBox[39m=[32m"0 0 24 24"[39m
+                  [33mwidth[39m=[32m"20"[39m
+                [36m>[39m
+                  [36m<path[39m
+                    [33md[39m=[32m"m12 3 10 5-10 5L2 8z M2 12l10 5 10-5 M2 16l10 5 10-5"[39m
+                  [36m/>[39m
+                [36m</svg>[39m
+                [36m<span>[39m
+                  [0mComponents[0m
+                [36m</span>[39m
+              [36m</a>[39m
+              [36m<a[39m
+                [33mclass[39m=[32m"nav-link"[39m
+                [33mdata-discover[39m=[32m"true"[39m
+                [33mhref[39m=[32m"/settings"[39m
+              [36m>[39m
+                [36m<svg[39m
+                  [33maria-hidden[39m=[32m"true"[39m
+                  [33mfill[39m=[32m"none"[39m
+                  [33mfocusable[39m=[32m"false"[39m
+                  [33mheight[39m=[32m"20"[39m
+                  [33mstroke[39m=[32m"currentColor"[39m
+                  [33mstroke-linecap[39m=[32m"round"[39m
+                  [33mstroke-linejoin[39m=[32m"round"[39m
+                  [33mstroke-width[39m=[32m"1.7"[39m
+                  [33mviewBox[39m=[32m"0 0 24 24"[39m
+                  [33mwidth[39m=[32m"20"[39m
+                [36m>[39m
+                  [36m<path[39m
+                    [33md[39m=[32m"M4 7h16 M4 17h16 M8 4v6 M16 14v6"[39m
+                  [36m/>[39m
+                [36m</svg>[39m
+                [36m<span>[39m
+                  [0mSettings[0m
+                [36m</span>[39m
+              [36m</a>[39m
+            [36m</nav>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"sidebar-bottom"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"foundation-note"[39m
+              [36m>[39m
+                [36m<span[39m
+                  [33mclass[39m=[32m"small-orb"[39m
+                [36m/>[39m
+                [36m<p>[39m
+                  [0mA little structure.[0m
+                  [36m<br />[39m
+                  [36m<strong>[39m
+                    [0mA lot more clarity.[0m
+                  [36m</strong>[39m
+                [36m</p>[39m
+                [36m<span[39m
+                  [33mclass[39m=[32m"foundation-caption"[39m
+                [36m>[39m
+                  [0mBuilt one week at a time.[0m
+                [36m</span>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"sidebar-footer"[39m
+              [36m>[39m
+                [36m<span[39m
+                  [33mclass[39m=[32m"status-dot"[39m
+                [36m/>[39m
+                [0mWeek 6 · Final review[0m
+                [36m<span>[39m
+                  [0mv0.6[0m
+                [36m</span>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</aside>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"main-column"[39m
+          [36m>[39m
+            [36m<header[39m
+              [33mclass[39m=[32m"topbar"[39m
+            [36m>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m"breadcrumb"[39m
+              [36m>[39m
+                [0mWorkspace [0m
+                [36m<span>[39m
+                  [0m/[0m
+                [36m</span>[39m
+                [0m [0m
+                [36m<strong>[39m
+                  [0mTasks[0m
+                [36m</strong>[39m
+              [36m</p>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"header-actions"[39m
+              [36m>[39m
+                [36m<a[39m
+                  [33mclass[39m=[32m"guide-link"[39m
+                  [33mdata-discover[39m=[32m"true"[39m
+                  [33mhref[39m=[32m"/settings"[39m
+                [36m>[39m
+                  [36m<svg[39m
+                    [33maria-hidden[39m=[32m"true"[39m
+                    [33mfill[39m=[32m"none"[39m
+                    [33mfocusable[39m=[32m"false"[39m
+                    [33mheight[39m=[32m"17"[39m
+                    [33mstroke[39m=[32m"currentColor"[39m
+                    [33mstroke-linecap[39m=[32m"round"[39m
+                    [33mstroke-linejoin[39m=[32m"round"[39m
+                    [33mstroke-width[39m=[32m"1.7"[39m
+                    [33mviewBox[39m=[32m"0 0 24 24"[39m
+                    [33mwidth[39m=[32m"17"[39m
+                  [36m>[39m
+                    [36m<path[39m
+                      [33md[39m=[32m"M12 5v15 M12 5C8 2 4 3 2 4v15c4-2 7-1 10 1 3-2 6-3 10-1V4c-2-1-6-2-10 1"[39m
+                    [36m/>[39m
+                  [36m</svg>[39m
+                  [0mSetup guide[0m
+                [36m</a>[39m
+                [36m<span[39m
+                  [33mclass[39m=[32m"header-divider"[39m
+                [36m/>[39m
+                [36m<span[39m
+                  [33maria-label[39m=[32m"TaskFlow workspace"[39m
+                  [33mclass[39m=[32m"avatar"[39m
+                [36m>[39m
+                  [0mTF[0m
+                [36m</span>[39m
+              [36m</div>[39m
+            [36m</header>[39m
+            [36m<main[39m
+              [33mid[39m=[32m"main-content"[39m
+              [33mtabindex[39m=[32m"-1"[39m
+            [36m>[39m
+              [36m<section[39m
+                [33maria-labelledby[39m=[32m"route-loading-title"[39m
+                [33mclass[39m=[32m"route-pending"[39m
+              [36m>[39m
+                [36m<h1[39m
+                  [33mid[39m=[32m"route-loading-title"[39m
+                [36m>[39m
+                  [0mOpening your workspace[0m
+                [36m</h1>[39m
+                [36m<p[39m
+                  [33mrole[39m=[32m"status"[39m
+                [36m>[39m
+                  [0mLoading this page. Your navigation is still available.[0m
+                [36m</p>[39m
+                [36m<div[39m
+                  [33maria-hidden[39m=[32m"true"[39m
+                  [33mclass[39m=[32m"route-placeholder"[39m
+                [36m/>[39m
+              [36m</section>[39m
+            [36m</main>[39m
+            [36m<footer[39m
+              [33mclass[39m=[32m"page-footer"[39m
+            [36m>[39m
+              [36m<span>[39m
+                [0mTaskFlow · A calmer way to get things done.[0m
+              [36m</span>[39m
+              [36m<span>[39m
+                [0mYuvaIntern / ReactJS Internship[0m
+              [36m</span>[39m
+            [36m</footer>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      281 |   ).toBeDisabled();
+      282 |   await user.click(screen.getByRole('link', { name: 'Tasks', exact: true }));
+    > 283 |   expect(screen.getByText('Imported local copy')).toBeInTheDocument();
+          |                 ^
+      284 | });
+      285 | test('storage failure never claims imported copy is persisted', async () => {
+      286 |   const set = jest.spyOn(Storage.prototype, 'setItem').mockImplementation(() => {
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+      at Object.getByText (tests/remote.test.jsx:283:17)
+
+
+Test Suites: 1 failed, 10 passed, 11 total
+Tests:       2 failed, 110 passed, 112 total
+Snapshots:   0 total
+Time:        4.762 s, estimated 6 s
+Ran all test suites.
