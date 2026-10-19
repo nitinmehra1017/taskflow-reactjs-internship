@@ -1,0 +1,31 @@
+taskflow-reactjs-internship@0.2.0 /Users/aditimehra/Documents/New project/taskflow-reactjs-internship
+├── @babel/core@7.29.7
+├── @babel/preset-env@7.29.7
+├── @babel/preset-react@7.29.7
+├── @eslint/js@10.0.1
+├── @testing-library/jest-dom@7.0.1
+├── @testing-library/react@16.3.3
+├── @testing-library/user-event@14.6.8
+├── babel-jest@30.5.2
+├── babel-loader@10.1.1
+├── css-loader@7.1.5
+├── eslint-config-prettier@10.1.8
+├── eslint-plugin-react-hooks@7.1.1
+├── eslint-plugin-react-x@5.28.2
+├── eslint@10.13.0
+├── globals@16.5.0
+├── html-webpack-plugin@5.6.8
+├── jest-environment-jsdom@30.5.2
+├── jest@30.5.2
+├── mini-css-extract-plugin@2.10.2
+├── prettier@3.9.10
+├── react-dom@19.3.1
+├── react-router-dom@7.18.4
+├── react@19.3.1
+├── sass-loader@17.0.1
+├── sass@1.105.2
+├── style-loader@4.0.0
+├── webpack-cli@6.0.1
+├── webpack-dev-server@5.2.7
+└── webpack@5.112.0
+

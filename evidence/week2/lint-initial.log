@@ -1,0 +1,48 @@
+
+> taskflow-reactjs-internship@0.2.0 lint
+> eslint . --max-warnings 0
+
+
+/Users/aditimehra/Documents/New project/taskflow-reactjs-internship/src/components/ui/Modal/Modal.jsx
+  39:19  error  Error: Cannot modify local variables after render completes
+
+This argument is a function which may reassign or mutate `portal` after render, which can cause inconsistent behavior on subsequent renders. Consider using state instead.
+
+   37 |   }, [onClose]);
+   38 |
+>  39 |   useLayoutEffect(() => {
+      |                   ^^^^^^^
+>  40 |     const returnTarget = document.activeElement;
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  41 |     const previousOverflow = document.body.style.overflow;
+      …
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 101 |     };
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 102 |   }, [portal, initialFocusRef]);
+      | ^^^^ This function may (indirectly) reassign or modify `portal` after render
+  103 |
+  104 |   return createPortal(
+  105 |     <div
+
+  40 |     const returnTarget = document.activeElement;
+  41 |     const previousOverflow = document.body.style.overflow;
+> 42 |     portal.dataset.taskflowModal = '';
+     |     ^^^^^^^^^^^^^^ This modifies `portal`
+  43 |     document.body.append(portal);
+  44 |     const siblings = [...document.body.children].filter((element) => element !== portal);
+  45 |     const previousInert = siblings.map((element) => element.inert);  react-hooks/immutability
+  42:5   error  Error: This value cannot be modified
+
+Modifying a value returned from 'useState()', which should not be modified directly. Use the setter function to update instead.
+
+  40 |     const returnTarget = document.activeElement;
+  41 |     const previousOverflow = document.body.style.overflow;
+> 42 |     portal.dataset.taskflowModal = '';
+     |     ^^^^^^^^^^^^^^ `portal` cannot be modified
+  43 |     document.body.append(portal);
+  44 |     const siblings = [...document.body.children].filter((element) => element !== portal);
+  45 |     const previousInert = siblings.map((element) => element.inert);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         react-hooks/immutability
+
+✖ 2 problems (2 errors, 0 warnings)
+

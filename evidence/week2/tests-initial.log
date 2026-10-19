@@ -1,0 +1,11 @@
+
+> taskflow-reactjs-internship@0.2.0 test
+> jest --runInBand --json --outputFile=evidence/week2/jest-results.json
+
+
+Test Suites: 2 passed, 2 total
+Tests:       32 passed, 32 total
+Snapshots:   0 total
+Time:        3.471 s
+Ran all test suites.
+Test results written to: evidence/week2/jest-results.json

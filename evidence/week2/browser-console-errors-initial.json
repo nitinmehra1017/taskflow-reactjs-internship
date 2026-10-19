@@ -1,0 +1,182 @@
+[
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Invalid Host/Origin header",
+    "timestamp": "2026-10-19T16:13:23.355Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Invalid Host/Origin header",
+    "timestamp": "2026-10-19T16:13:24.387Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Invalid Host/Origin header",
+    "timestamp": "2026-10-19T16:13:25.440Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Invalid Host/Origin header",
+    "timestamp": "2026-10-19T16:13:26.533Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Invalid Host/Origin header",
+    "timestamp": "2026-10-19T16:13:27.550Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Invalid Host/Origin header",
+    "timestamp": "2026-10-19T16:13:28.610Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Invalid Host/Origin header",
+    "timestamp": "2026-10-19T16:13:29.641Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Invalid Host/Origin header",
+    "timestamp": "2026-10-19T16:13:30.647Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Invalid Host/Origin header",
+    "timestamp": "2026-10-19T16:13:31.720Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Invalid Host/Origin header",
+    "timestamp": "2026-10-19T16:13:32.731Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Invalid Host/Origin header",
+    "timestamp": "2026-10-19T16:13:33.807Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Invalid Host/Origin header",
+    "timestamp": "2026-10-19T16:13:34.892Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Invalid Host/Origin header",
+    "timestamp": "2026-10-19T16:13:35.923Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Invalid Host/Origin header",
+    "timestamp": "2026-10-19T16:13:36.941Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Invalid Host/Origin header",
+    "timestamp": "2026-10-19T16:13:38.024Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Invalid Host/Origin header",
+    "timestamp": "2026-10-19T16:13:39.056Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Invalid Host/Origin header",
+    "timestamp": "2026-10-19T16:13:40.146Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Invalid Host/Origin header",
+    "timestamp": "2026-10-19T16:13:41.234Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Invalid Host/Origin header",
+    "timestamp": "2026-10-19T16:13:42.295Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Invalid Host/Origin header",
+    "timestamp": "2026-10-19T16:13:43.341Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Invalid Host/Origin header",
+    "timestamp": "2026-10-19T16:13:44.376Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Invalid Host/Origin header",
+    "timestamp": "2026-10-19T16:13:45.454Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Invalid Host/Origin header",
+    "timestamp": "2026-10-19T16:13:46.485Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Invalid Host/Origin header",
+    "timestamp": "2026-10-19T16:13:47.577Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Invalid Host/Origin header",
+    "timestamp": "2026-10-19T16:13:48.646Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Invalid Host/Origin header",
+    "timestamp": "2026-10-19T16:13:49.736Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Invalid Host/Origin header",
+    "timestamp": "2026-10-19T16:13:50.815Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Invalid Host/Origin header",
+    "timestamp": "2026-10-19T16:13:51.928Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Invalid Host/Origin header",
+    "timestamp": "2026-10-19T16:13:52.987Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  },
+  {
+    "level": "error",
+    "message": "[webpack-dev-server] Invalid Host/Origin header",
+    "timestamp": "2026-10-19T16:13:54.031Z",
+    "url": "webpack-internal:///./node_modules/webpack-dev-server/client/modules/logger/index.js"
+  }
+]

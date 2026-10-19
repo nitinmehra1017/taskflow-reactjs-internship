@@ -1,0 +1,77 @@
+{
+  "button-variants.jpg": {
+    "width": 1440,
+    "height": 1000,
+    "sha256": "ad10aea31809fe585b7a5b6120e33b50a4ad01220083880c07aec35b57c9ab59"
+  },
+  "cards-and-badges.jpg": {
+    "width": 1280,
+    "height": 720,
+    "sha256": "7c0093a0467628b999a865f0d3a7373b429371e0fba297e28b2bc482af56f6f9"
+  },
+  "command-output-build.jpg": {
+    "width": 1440,
+    "height": 1000,
+    "sha256": "3025a6e93302deb4d4970e988662304357b01cbc0405c9cb533e522a7cbeb6d5"
+  },
+  "command-output-full.jpg": {
+    "width": 1440,
+    "height": 1851,
+    "sha256": "aec96f9a5c0931801d8828298e0421c310204cb9bc9c6427116077ab02bc29e0"
+  },
+  "command-output-summary.jpg": {
+    "width": 1440,
+    "height": 810,
+    "sha256": "f26c4c267d690563f97a775c8e6c7d6172712cc07fac7aeae1c9f8aa5411166f"
+  },
+  "dashboard-mobile.jpg": {
+    "width": 390,
+    "height": 844,
+    "sha256": "d5e69fbfd78b41c6b5fc78a2587927a8a9a2f111541fa1c6081eda1d2af8e2e3"
+  },
+  "input-validation.jpg": {
+    "width": 1440,
+    "height": 1000,
+    "sha256": "dce2ef17faddc80c99b7600847c7aed6d32936dc0374689abe8173284c78b6e0"
+  },
+  "mobile-controls.jpg": {
+    "width": 390,
+    "height": 844,
+    "sha256": "9432560c8ad3bd3988503640cb1ca763ef5c5fc209d3e210e167aebf0b1b4124"
+  },
+  "modal-open-desktop.jpg": {
+    "width": 1440,
+    "height": 1000,
+    "sha256": "10a9edd64bb8581e7cd95eff0d23c4b073ac979922b1be9de7621a48de28e21f"
+  },
+  "modal-open-mobile.jpg": {
+    "width": 390,
+    "height": 844,
+    "sha256": "f02e524cd9fc888c15a51296e1cac35e2810c49c8b82db3d2f08dd99b779b111"
+  },
+  "selects-and-alerts.jpg": {
+    "width": 1280,
+    "height": 720,
+    "sha256": "3a9b1f03d3bbd52bada7c8a5bd1e2919f6a9ea97ac2022e5c45f0f9896300d5d"
+  },
+  "showcase-desktop-viewport.jpg": {
+    "width": 1440,
+    "height": 1000,
+    "sha256": "df921e1f3d2e822a8a521a2febf937d7b10b42a4deec281e9351463408aff21a"
+  },
+  "showcase-desktop.jpg": {
+    "width": 1440,
+    "height": 2424,
+    "sha256": "b6dd734b6dee491c3f97b46dc1a31d1db887e6348fdb416e6210900b13b5c9a5"
+  },
+  "showcase-mobile.jpg": {
+    "width": 390,
+    "height": 844,
+    "sha256": "1138047ad7d2537925b4ab7b336e9eee4bb97aa152738012b930ece4ad47b1b6"
+  },
+  "showcase-tablet.jpg": {
+    "width": 768,
+    "height": 3751,
+    "sha256": "de918dfabaaa435920233ed78923601a66d3725ebf6b4ba8c83ae2772103bd9c"
+  }
+}
